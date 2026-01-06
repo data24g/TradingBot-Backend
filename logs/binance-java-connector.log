@@ -580,3 +580,723 @@ com.mongodb.MongoNodeIsRecoveringException: Command failed with error 11600 (Int
 2026-01-06 10:13:37.453[1767669217453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
 2026-01-06 10:13:37.453[1767669217453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
 2026-01-06 10:13:37.455[1767669217455] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:14:07.451[1767669247451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:14:07.454[1767669247454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:14:07.454[1767669247454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:14:07.457[1767669247457] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:14:37.451[1767669277451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:14:37.453[1767669277453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:14:37.453[1767669277453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:14:37.455[1767669277455] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:15:07.449[1767669307449] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:15:07.451[1767669307451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:15:07.451[1767669307451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:15:07.451[1767669307451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:15:13.546[1767669313546] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:15:13.546[1767669313546] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:15:13.548[1767669313548] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:15:13.548[1767669313548] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@7ad9ec87]]
+2026-01-06 10:15:13.549[1767669313549] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:15:13.555[1767669313555] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:15:13.555[1767669313555] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:15:13.557[1767669313557] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:15:13.558[1767669313558] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@1108f4e4, com.example.TradingBot.tradingbo (truncated)...]
+2026-01-06 10:15:13.558[1767669313558] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:15:37.450[1767669337450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:15:37.453[1767669337453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:15:37.453[1767669337453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:15:37.455[1767669337455] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:16:05.420[1767669365420] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:16:05.421[1767669365421] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:16:05.423[1767669365423] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:16:05.423[1767669365423] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@6135cbc4]]
+2026-01-06 10:16:05.423[1767669365423] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:16:05.429[1767669365429] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:16:05.429[1767669365429] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:16:05.432[1767669365432] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:16:05.432[1767669365432] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@20088603, com.example.TradingBot.tradingbo (truncated)...]
+2026-01-06 10:16:05.433[1767669365433] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:16:07.452[1767669367452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:16:07.454[1767669367454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:16:07.454[1767669367454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:16:07.455[1767669367455] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:16:08.300[1767669368300] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:16:08.300[1767669368300] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:16:08.303[1767669368303] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:16:08.303[1767669368303] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@4244f608]]
+2026-01-06 10:16:08.304[1767669368304] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:16:08.314[1767669368314] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:16:08.314[1767669368314] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:16:08.316[1767669368316] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:16:08.316[1767669368316] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@721b84c7, com.example.TradingBot.tradingbo (truncated)...]
+2026-01-06 10:16:08.316[1767669368316] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:16:15.051[1767669375051] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:16:15.052[1767669375052] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:16:15.055[1767669375055] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:16:15.055[1767669375055] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@67ac218e]]
+2026-01-06 10:16:15.056[1767669375056] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:16:15.065[1767669375065] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:16:15.065[1767669375065] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:16:15.067[1767669375067] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:16:15.067[1767669375067] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@68843277, com.example.TradingBot.tradingbo (truncated)...]
+2026-01-06 10:16:15.068[1767669375068] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:16:37.451[1767669397451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:16:37.453[1767669397453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:16:37.453[1767669397453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:16:37.454[1767669397454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:17:07.451[1767669427451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:17:07.453[1767669427453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:17:07.453[1767669427453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:17:07.456[1767669427456] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:17:11.136[1767669431136] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/transaction", parameters={}
+2026-01-06 10:17:11.136[1767669431136] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createTransaction(DemoTransaction)
+2026-01-06 10:17:11.138[1767669431138] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoTransaction@3aafa4f3]
+2026-01-06 10:17:11.146[1767669431146] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:17:11.146[1767669431146] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoTransaction@3aafa4f3]
+2026-01-06 10:17:11.147[1767669431147] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:17:12.859[1767669432859] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:17:12.859[1767669432859] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:17:12.859[1767669432859] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:17:12.859[1767669432859] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:17:12.861[1767669432861] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:17:12.861[1767669432861] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:17:12.862[1767669432862] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@2cbb4008]]
+2026-01-06 10:17:12.862[1767669432862] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@5df69b36]]
+2026-01-06 10:17:12.862[1767669432862] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:17:12.862[1767669432862] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:17:12.888[1767669432888] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:17:12.888[1767669432888] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:17:12.889[1767669432889] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:17:12.889[1767669432889] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:17:12.891[1767669432891] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:17:12.891[1767669432891] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:17:12.891[1767669432891] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@5035fedf, com.example.TradingBot.tradingbo (truncated)...]
+2026-01-06 10:17:12.891[1767669432891] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@2008c1ff, com.example.TradingBot.tradingbo (truncated)...]
+2026-01-06 10:17:12.891[1767669432891] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:17:12.891[1767669432891] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:17:37.451[1767669457451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:17:37.453[1767669457453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:17:37.453[1767669457453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:17:37.455[1767669457455] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:18:07.451[1767669487451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:18:07.453[1767669487453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:18:07.453[1767669487453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:18:07.455[1767669487455] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:18:37.451[1767669517451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:18:37.453[1767669517453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:18:37.453[1767669517453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:18:37.455[1767669517455] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:19:07.451[1767669547451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:19:07.453[1767669547453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:19:07.453[1767669547453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:19:07.454[1767669547454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:19:29.499[1767669569499] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/plan", parameters={}
+2026-01-06 10:19:29.499[1767669569499] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createDemoPlan(DemoPlan)
+2026-01-06 10:19:29.503[1767669569503] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoPlan@501eaf9c]
+2026-01-06 10:19:29.508[1767669569508] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:19:29.508[1767669569508] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoPlan@501eaf9c]
+2026-01-06 10:19:29.509[1767669569509] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:19:30.949[1767669570949] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:19:30.949[1767669570949] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:19:30.951[1767669570951] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:19:30.951[1767669570951] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@7466024, com.example.TradingBot.tradingbot.entity (truncated)...]
+2026-01-06 10:19:30.952[1767669570952] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:19:36.726[1767669576726] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - DELETE "/api/dca/demo/plan/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:19:36.726[1767669576726] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#deleteDemoPlan(String)
+2026-01-06 10:19:36.735[1767669576735] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:19:36.735[1767669576735] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+2026-01-06 10:19:36.735[1767669576735] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - Completed 204 NO_CONTENT
+2026-01-06 10:19:37.450[1767669577450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:19:37.452[1767669577452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:19:37.452[1767669577452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:19:37.454[1767669577454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:20:04.683[1767669604683] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/transaction", parameters={}
+2026-01-06 10:20:04.683[1767669604683] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createTransaction(DemoTransaction)
+2026-01-06 10:20:04.685[1767669604685] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoTransaction@6393a9a3]
+2026-01-06 10:20:04.692[1767669604692] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:20:04.692[1767669604692] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoTransaction@6393a9a3]
+2026-01-06 10:20:04.693[1767669604693] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:20:06.936[1767669606936] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:20:06.936[1767669606936] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:20:06.936[1767669606936] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:20:06.936[1767669606936] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:20:06.939[1767669606939] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:20:06.939[1767669606939] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:20:06.939[1767669606939] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@3ae2c788]]
+2026-01-06 10:20:06.939[1767669606939] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@29b9384c]]
+2026-01-06 10:20:06.939[1767669606939] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:20:06.939[1767669606939] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:20:06.969[1767669606969] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7f41a8fe812fc1939944", parameters={}
+2026-01-06 10:20:06.969[1767669606969] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7f41a8fe812fc1939944", parameters={}
+2026-01-06 10:20:06.969[1767669606969] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:20:06.969[1767669606969] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:20:06.970[1767669606970] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:20:06.970[1767669606970] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:20:06.971[1767669606971] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@3b566f27]]
+2026-01-06 10:20:06.971[1767669606971] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@72533c5a]]
+2026-01-06 10:20:06.971[1767669606971] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:20:06.971[1767669606971] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:20:07.450[1767669607450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:20:07.452[1767669607452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:20:07.452[1767669607452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:20:07.454[1767669607454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:20:17.260[1767669617260] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/transaction", parameters={}
+2026-01-06 10:20:17.260[1767669617260] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createTransaction(DemoTransaction)
+2026-01-06 10:20:17.261[1767669617261] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoTransaction@26c614ae]
+2026-01-06 10:20:17.267[1767669617267] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:20:17.267[1767669617267] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoTransaction@26c614ae]
+2026-01-06 10:20:17.268[1767669617268] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:20:18.471[1767669618471] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/transaction", parameters={}
+2026-01-06 10:20:18.471[1767669618471] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createTransaction(DemoTransaction)
+2026-01-06 10:20:18.472[1767669618472] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoTransaction@4fa6cdbd]
+2026-01-06 10:20:18.477[1767669618477] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:20:18.477[1767669618477] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoTransaction@4fa6cdbd]
+2026-01-06 10:20:18.478[1767669618478] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:20:31.177[1767669631177] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:20:31.177[1767669631177] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:20:31.177[1767669631177] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:20:31.177[1767669631177] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:20:31.180[1767669631180] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:20:31.180[1767669631180] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:20:31.180[1767669631180] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@368bc613]]
+2026-01-06 10:20:31.180[1767669631180] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@5548ed4]]
+2026-01-06 10:20:31.181[1767669631181] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:20:31.181[1767669631181] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:20:31.216[1767669631216] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7f41a8fe812fc1939944", parameters={}
+2026-01-06 10:20:31.216[1767669631216] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7f41a8fe812fc1939944", parameters={}
+2026-01-06 10:20:31.216[1767669631216] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:20:31.216[1767669631216] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:20:31.218[1767669631218] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:20:31.218[1767669631218] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:20:31.218[1767669631218] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@486121e5, com.example.TradingBot.tradingbo (truncated)...]
+2026-01-06 10:20:31.218[1767669631218] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@26912bb5, com.example.TradingBot.tradingbo (truncated)...]
+2026-01-06 10:20:31.219[1767669631219] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:20:31.219[1767669631219] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:20:37.450[1767669637450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:20:37.452[1767669637452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:20:37.452[1767669637452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:20:37.454[1767669637454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:21:07.451[1767669667451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:21:07.452[1767669667452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:21:07.452[1767669667452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:21:07.454[1767669667454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:21:37.450[1767669697450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:21:37.452[1767669697452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:21:37.452[1767669697452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:21:37.454[1767669697454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:22:07.450[1767669727450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:22:07.452[1767669727452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:22:07.452[1767669727452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:22:07.454[1767669727454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:22:37.450[1767669757450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:22:37.452[1767669757452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:22:37.452[1767669757452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:22:37.454[1767669757454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:23:07.450[1767669787450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:23:07.453[1767669787453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:23:07.453[1767669787453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:23:07.455[1767669787455] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:23:37.451[1767669817451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:23:37.453[1767669817453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:23:37.453[1767669817453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:23:37.454[1767669817454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:24:07.449[1767669847449] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:24:07.450[1767669847450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:24:07.450[1767669847450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:24:07.451[1767669847451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:24:37.449[1767669877449] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:24:37.450[1767669877450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:24:37.450[1767669877450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:24:37.451[1767669877451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:25:07.451[1767669907451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:25:07.452[1767669907452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:25:07.452[1767669907452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:25:07.454[1767669907454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:25:37.450[1767669937450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:25:37.452[1767669937452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:25:37.452[1767669937452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:25:37.453[1767669937453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:26:07.450[1767669967450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:26:07.452[1767669967452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:26:07.452[1767669967452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:26:07.453[1767669967453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:26:37.450[1767669997450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:26:37.452[1767669997452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:26:37.452[1767669997452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:26:37.454[1767669997454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:27:07.450[1767670027450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:27:07.452[1767670027452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:27:07.452[1767670027452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:27:07.454[1767670027454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:27:37.450[1767670057450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:27:37.452[1767670057452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:27:37.452[1767670057452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:27:37.453[1767670057453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:28:07.450[1767670087450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:28:07.451[1767670087451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:28:07.451[1767670087451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:28:07.452[1767670087452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:28:37.451[1767670117451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:28:37.453[1767670117453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:28:37.453[1767670117453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:28:37.455[1767670117455] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:28:58.410[1767670138410] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:28:58.410[1767670138410] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:28:58.416[1767670138416] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:28:58.416[1767670138416] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@5184501c]]
+2026-01-06 10:28:58.419[1767670138419] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:28:58.425[1767670138425] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:28:58.425[1767670138425] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:28:58.432[1767670138432] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:28:58.432[1767670138432] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@6614b9f9]]
+2026-01-06 10:28:58.433[1767670138433] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:28:58.488[1767670138488] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7f41a8fe812fc1939944", parameters={}
+2026-01-06 10:28:58.488[1767670138488] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7f41a8fe812fc1939944", parameters={}
+2026-01-06 10:28:58.488[1767670138488] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:28:58.489[1767670138489] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:28:58.492[1767670138492] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:28:58.492[1767670138492] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@695e2194, com.example.TradingBot.tradingbo (truncated)...]
+2026-01-06 10:28:58.493[1767670138493] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:28:58.493[1767670138493] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@422d93b, com.example.TradingBot.tradingbot (truncated)...]
+2026-01-06 10:28:58.494[1767670138494] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:28:58.494[1767670138494] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:01.708[1767670141708] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - DELETE "/api/dca/demo/plan/695c7f41a8fe812fc1939944", parameters={}
+2026-01-06 10:29:01.709[1767670141709] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#deleteDemoPlan(String)
+2026-01-06 10:29:01.712[1767670141712] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:01.712[1767670141712] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+2026-01-06 10:29:01.712[1767670141712] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - Completed 204 NO_CONTENT
+2026-01-06 10:29:03.126[1767670143126] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/plan", parameters={}
+2026-01-06 10:29:03.127[1767670143127] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createDemoPlan(DemoPlan)
+2026-01-06 10:29:03.130[1767670143130] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoPlan@301a0190]
+2026-01-06 10:29:03.138[1767670143138] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:03.138[1767670143138] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoPlan@301a0190]
+2026-01-06 10:29:03.139[1767670143139] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:04.087[1767670144087] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:29:04.087[1767670144087] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:29:04.091[1767670144091] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:04.091[1767670144091] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@539a827c]]
+2026-01-06 10:29:04.093[1767670144093] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:07.450[1767670147450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:29:07.452[1767670147452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:29:07.452[1767670147452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:29:07.453[1767670147453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:29:08.959[1767670148959] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/plan", parameters={}
+2026-01-06 10:29:08.959[1767670148959] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createDemoPlan(DemoPlan)
+2026-01-06 10:29:08.961[1767670148961] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoPlan@2421002e]
+2026-01-06 10:29:08.965[1767670148965] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:08.965[1767670148965] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoPlan@2421002e]
+2026-01-06 10:29:08.966[1767670148966] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:10.186[1767670150186] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:29:10.186[1767670150186] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:29:10.190[1767670150190] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:10.190[1767670150190] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@69dd96f7, com.example.TradingBot.tradingbot.entit (truncated)...]
+2026-01-06 10:29:10.191[1767670150191] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:15.698[1767670155698] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - DELETE "/api/dca/demo/plan/695c817fa8fe812fc1939948", parameters={}
+2026-01-06 10:29:15.698[1767670155698] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#deleteDemoPlan(String)
+2026-01-06 10:29:15.701[1767670155701] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:15.701[1767670155701] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+2026-01-06 10:29:15.702[1767670155702] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - Completed 204 NO_CONTENT
+2026-01-06 10:29:18.052[1767670158052] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - DELETE "/api/dca/demo/plan/695c8184a8fe812fc1939949", parameters={}
+2026-01-06 10:29:18.052[1767670158052] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#deleteDemoPlan(String)
+2026-01-06 10:29:18.055[1767670158055] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:18.056[1767670158056] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+2026-01-06 10:29:18.056[1767670158056] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - Completed 204 NO_CONTENT
+2026-01-06 10:29:19.864[1767670159864] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/plan", parameters={}
+2026-01-06 10:29:19.865[1767670159865] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createDemoPlan(DemoPlan)
+2026-01-06 10:29:19.866[1767670159866] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoPlan@32c59e19]
+2026-01-06 10:29:19.870[1767670159870] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:19.870[1767670159870] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoPlan@32c59e19]
+2026-01-06 10:29:19.871[1767670159871] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:21.959[1767670161959] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:29:21.960[1767670161960] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:29:21.964[1767670161964] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:21.964[1767670161964] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@33b6f46f]]
+2026-01-06 10:29:21.965[1767670161965] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:25.059[1767670165059] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/transaction", parameters={}
+2026-01-06 10:29:25.059[1767670165059] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createTransaction(DemoTransaction)
+2026-01-06 10:29:25.061[1767670165061] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoTransaction@3f1830d8]
+2026-01-06 10:29:25.068[1767670165068] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:25.068[1767670165068] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoTransaction@3f1830d8]
+2026-01-06 10:29:25.069[1767670165069] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:27.735[1767670167735] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:29:27.735[1767670167735] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:29:27.735[1767670167735] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:29:27.735[1767670167735] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:29:27.737[1767670167737] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:27.737[1767670167737] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:27.737[1767670167737] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@40273eb0]]
+2026-01-06 10:29:27.737[1767670167737] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@283a3748]]
+2026-01-06 10:29:27.738[1767670167738] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:27.738[1767670167738] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:27.798[1767670167798] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c818fa8fe812fc193994a", parameters={}
+2026-01-06 10:29:27.799[1767670167799] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:29:27.799[1767670167799] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c818fa8fe812fc193994a", parameters={}
+2026-01-06 10:29:27.799[1767670167799] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:29:27.802[1767670167802] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:27.802[1767670167802] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:27.802[1767670167802] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@19443738]]
+2026-01-06 10:29:27.802[1767670167802] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@67699f6b]]
+2026-01-06 10:29:27.802[1767670167802] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:27.803[1767670167803] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:29.322[1767670169322] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/transaction", parameters={}
+2026-01-06 10:29:29.322[1767670169322] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createTransaction(DemoTransaction)
+2026-01-06 10:29:29.324[1767670169324] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoTransaction@feba8bb]
+2026-01-06 10:29:29.330[1767670169330] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:29.331[1767670169331] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoTransaction@feba8bb]
+2026-01-06 10:29:29.332[1767670169332] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:30.334[1767670170334] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/transaction", parameters={}
+2026-01-06 10:29:30.334[1767670170334] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createTransaction(DemoTransaction)
+2026-01-06 10:29:30.335[1767670170335] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoTransaction@ea37820]
+2026-01-06 10:29:30.341[1767670170341] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:30.341[1767670170341] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoTransaction@ea37820]
+2026-01-06 10:29:30.342[1767670170342] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:31.393[1767670171393] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/transaction", parameters={}
+2026-01-06 10:29:31.393[1767670171393] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createTransaction(DemoTransaction)
+2026-01-06 10:29:31.395[1767670171395] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoTransaction@18dad7d1]
+2026-01-06 10:29:31.401[1767670171401] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:31.402[1767670171402] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoTransaction@18dad7d1]
+2026-01-06 10:29:31.402[1767670171402] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:31.928[1767670171928] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/transaction", parameters={}
+2026-01-06 10:29:31.928[1767670171928] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createTransaction(DemoTransaction)
+2026-01-06 10:29:31.930[1767670171930] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoTransaction@750a3c8e]
+2026-01-06 10:29:31.936[1767670171936] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:31.936[1767670171936] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoTransaction@750a3c8e]
+2026-01-06 10:29:31.937[1767670171937] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:32.312[1767670172312] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/transaction", parameters={}
+2026-01-06 10:29:32.312[1767670172312] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createTransaction(DemoTransaction)
+2026-01-06 10:29:32.313[1767670172313] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoTransaction@21cf1823]
+2026-01-06 10:29:32.319[1767670172319] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:29:32.320[1767670172320] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoTransaction@21cf1823]
+2026-01-06 10:29:32.321[1767670172321] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:29:37.450[1767670177450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:29:37.451[1767670177451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:29:37.451[1767670177451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:29:37.452[1767670177452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:30:07.450[1767670207450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:30:07.452[1767670207452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:30:07.452[1767670207452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:30:07.453[1767670207453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:30:31.580[1767670231580] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:30:31.580[1767670231580] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:30:31.583[1767670231583] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:30:31.583[1767670231583] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@2752f42e]]
+2026-01-06 10:30:31.584[1767670231584] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:30:31.601[1767670231601] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c818fa8fe812fc193994a", parameters={}
+2026-01-06 10:30:31.602[1767670231602] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:30:31.610[1767670231610] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:30:31.610[1767670231610] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@2ae5f305, com.example.TradingBot.tradingbo (truncated)...]
+2026-01-06 10:30:31.611[1767670231611] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:30:37.450[1767670237450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:30:37.452[1767670237452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:30:37.452[1767670237452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:30:37.453[1767670237453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:31:04.315[1767670264315] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - DELETE "/api/dca/demo/plan/695c818fa8fe812fc193994a", parameters={}
+2026-01-06 10:31:04.315[1767670264315] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#deleteDemoPlan(String)
+2026-01-06 10:31:04.318[1767670264318] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:31:04.318[1767670264318] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+2026-01-06 10:31:04.319[1767670264319] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - Completed 204 NO_CONTENT
+2026-01-06 10:31:05.904[1767670265904] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/plan", parameters={}
+2026-01-06 10:31:05.904[1767670265904] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createDemoPlan(DemoPlan)
+2026-01-06 10:31:05.905[1767670265905] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoPlan@70dec986]
+2026-01-06 10:31:05.910[1767670265910] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:31:05.910[1767670265910] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoPlan@70dec986]
+2026-01-06 10:31:05.912[1767670265912] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:31:06.714[1767670266714] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:31:06.715[1767670266715] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:31:06.718[1767670266718] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:31:06.718[1767670266718] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@27c3cb5d]]
+2026-01-06 10:31:06.719[1767670266719] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:31:07.450[1767670267450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:31:07.452[1767670267452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:31:07.452[1767670267452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:31:07.453[1767670267453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:31:37.450[1767670297450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:31:37.452[1767670297452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:31:37.452[1767670297452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:31:37.453[1767670297453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:32:07.452[1767670327452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:32:07.454[1767670327454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:32:07.454[1767670327454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:32:07.456[1767670327456] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:32:37.450[1767670357450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:32:37.452[1767670357452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:32:37.452[1767670357452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:32:37.453[1767670357453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:32:58.899[1767670378899] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/transaction", parameters={}
+2026-01-06 10:32:58.899[1767670378899] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createTransaction(DemoTransaction)
+2026-01-06 10:32:58.901[1767670378901] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoTransaction@108cb868]
+2026-01-06 10:32:58.907[1767670378907] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:32:58.907[1767670378907] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoTransaction@108cb868]
+2026-01-06 10:32:58.910[1767670378910] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:33:00.647[1767670380647] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:33:00.647[1767670380647] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:33:00.648[1767670380648] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:33:00.648[1767670380648] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:33:00.651[1767670380651] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:33:00.651[1767670380651] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@1aff7eeb]]
+2026-01-06 10:33:00.651[1767670380651] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:33:00.652[1767670380652] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@290de136]]
+2026-01-06 10:33:00.652[1767670380652] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:33:00.653[1767670380653] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:33:00.721[1767670380721] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c81f9a8fe812fc1939951", parameters={}
+2026-01-06 10:33:00.721[1767670380721] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:33:00.721[1767670380721] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c81f9a8fe812fc1939951", parameters={}
+2026-01-06 10:33:00.721[1767670380721] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:33:00.724[1767670380724] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:33:00.724[1767670380724] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:33:00.724[1767670380724] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@150d2f02]]
+2026-01-06 10:33:00.724[1767670380724] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@45866136]]
+2026-01-06 10:33:00.725[1767670380725] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:33:00.725[1767670380725] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:33:07.450[1767670387450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:33:07.452[1767670387452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:33:07.452[1767670387452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:33:07.453[1767670387453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:33:37.450[1767670417450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:33:37.452[1767670417452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:33:37.452[1767670417452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:33:37.453[1767670417453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:34:07.450[1767670447450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:34:07.452[1767670447452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:34:07.452[1767670447452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:34:07.453[1767670447453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:34:37.450[1767670477450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:34:37.452[1767670477452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:34:37.452[1767670477452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:34:37.453[1767670477453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:35:07.450[1767670507450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:35:07.452[1767670507452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:35:07.452[1767670507452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:35:07.453[1767670507453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:35:37.451[1767670537451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:35:37.452[1767670537452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:35:37.452[1767670537452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:35:37.454[1767670537454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:36:07.450[1767670567450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:36:07.452[1767670567452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:36:07.452[1767670567452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:36:07.453[1767670567453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:36:37.450[1767670597450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:36:37.452[1767670597452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:36:37.452[1767670597452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:36:37.453[1767670597453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:37:07.450[1767670627450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:37:07.452[1767670627452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:37:07.452[1767670627452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:37:07.453[1767670627453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:37:37.450[1767670657450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:37:37.452[1767670657452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:37:37.452[1767670657452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:37:37.453[1767670657453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:38:07.450[1767670687450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:38:07.452[1767670687452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:38:07.452[1767670687452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:38:07.454[1767670687454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:38:37.451[1767670717451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:38:37.452[1767670717452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:38:37.452[1767670717452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:38:37.454[1767670717454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:39:07.450[1767670747450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:39:07.452[1767670747452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:39:07.452[1767670747452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:39:07.454[1767670747454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:39:16.643[1767670756643] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:39:16.643[1767670756643] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:39:16.643[1767670756643] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:39:16.643[1767670756643] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:39:16.646[1767670756646] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:39:16.646[1767670756646] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:39:16.646[1767670756646] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@719ddc08]]
+2026-01-06 10:39:16.646[1767670756646] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@7fcf2ca4]]
+2026-01-06 10:39:16.647[1767670756647] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:39:16.647[1767670756647] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:39:16.713[1767670756713] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c81f9a8fe812fc1939951", parameters={}
+2026-01-06 10:39:16.713[1767670756713] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:39:16.714[1767670756714] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c81f9a8fe812fc1939951", parameters={}
+2026-01-06 10:39:16.714[1767670756714] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:39:16.716[1767670756716] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:39:16.716[1767670756716] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[]]
+2026-01-06 10:39:16.717[1767670756717] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:39:16.717[1767670756717] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[]]
+2026-01-06 10:39:16.717[1767670756717] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:39:16.717[1767670756717] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:39:25.404[1767670765404] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/transaction", parameters={}
+2026-01-06 10:39:25.404[1767670765404] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createTransaction(DemoTransaction)
+2026-01-06 10:39:25.405[1767670765405] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoTransaction@4f103ae8]
+2026-01-06 10:39:25.411[1767670765411] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:39:25.411[1767670765411] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoTransaction@4f103ae8]
+2026-01-06 10:39:25.412[1767670765412] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:39:30.507[1767670770507] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:39:30.507[1767670770507] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:39:30.508[1767670770508] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:39:30.508[1767670770508] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:39:30.511[1767670770511] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:39:30.512[1767670770512] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:39:30.512[1767670770512] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@5cda2b2]]
+2026-01-06 10:39:30.512[1767670770512] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@16ff5447]]
+2026-01-06 10:39:30.513[1767670770513] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:39:30.513[1767670770513] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:39:30.569[1767670770569] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c81f9a8fe812fc1939951", parameters={}
+2026-01-06 10:39:30.569[1767670770569] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:39:30.569[1767670770569] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c81f9a8fe812fc1939951", parameters={}
+2026-01-06 10:39:30.570[1767670770570] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:39:30.572[1767670770572] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:39:30.572[1767670770572] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:39:30.572[1767670770572] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@2ca989c]]
+2026-01-06 10:39:30.572[1767670770572] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@4996c703]]
+2026-01-06 10:39:30.572[1767670770572] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:39:30.572[1767670770572] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:39:37.450[1767670777450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:39:37.451[1767670777451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:39:37.451[1767670777451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:39:37.453[1767670777453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:39:45.132[1767670785132] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:39:45.132[1767670785132] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:39:45.132[1767670785132] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:39:45.132[1767670785132] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:39:45.136[1767670785136] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:39:45.136[1767670785136] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:39:45.136[1767670785136] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@733bf9d9]]
+2026-01-06 10:39:45.136[1767670785136] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@784181d0]]
+2026-01-06 10:39:45.137[1767670785137] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:39:45.137[1767670785137] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:39:45.185[1767670785185] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c81f9a8fe812fc1939951", parameters={}
+2026-01-06 10:39:45.186[1767670785186] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:39:45.186[1767670785186] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c81f9a8fe812fc1939951", parameters={}
+2026-01-06 10:39:45.186[1767670785186] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:39:45.189[1767670785189] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:39:45.189[1767670785189] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:39:45.189[1767670785189] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@3c9db9d2]]
+2026-01-06 10:39:45.189[1767670785189] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@4daa518]]
+2026-01-06 10:39:45.191[1767670785191] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:39:45.191[1767670785191] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:40:07.450[1767670807450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:40:07.452[1767670807452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:40:07.452[1767670807452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:40:07.453[1767670807453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:40:37.450[1767670837450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:40:37.451[1767670837451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:40:37.451[1767670837451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:40:37.452[1767670837452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:41:07.450[1767670867450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:41:07.451[1767670867451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:41:07.451[1767670867451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:41:07.453[1767670867453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:41:37.450[1767670897450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:41:37.451[1767670897451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:41:37.451[1767670897451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:41:37.452[1767670897452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:42:07.450[1767670927450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:42:07.452[1767670927452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:42:07.452[1767670927452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:42:07.453[1767670927453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:42:37.450[1767670957450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:42:37.451[1767670957451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:42:37.452[1767670957452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:42:37.453[1767670957453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:43:07.450[1767670987450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:43:07.452[1767670987452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:43:07.452[1767670987452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:43:07.453[1767670987453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:43:37.450[1767671017450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:43:37.451[1767671017451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:43:37.451[1767671017451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:43:37.452[1767671017452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:44:07.450[1767671047450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:44:07.452[1767671047452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:44:07.452[1767671047452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:44:07.453[1767671047453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:44:37.450[1767671077450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:44:37.451[1767671077451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:44:37.452[1767671077452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:44:37.453[1767671077453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:45:07.450[1767671107450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:45:07.452[1767671107452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:45:07.452[1767671107452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:45:07.453[1767671107453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:45:37.450[1767671137450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:45:37.452[1767671137452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:45:37.452[1767671137452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:45:37.453[1767671137453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:46:07.450[1767671167450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:46:07.452[1767671167452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:46:07.452[1767671167452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:46:07.453[1767671167453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:46:37.450[1767671197450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:46:37.452[1767671197452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:46:37.452[1767671197452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:46:37.453[1767671197453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:47:07.450[1767671227450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:47:07.452[1767671227452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:47:07.452[1767671227452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:47:07.453[1767671227453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:47:18.128[1767671238128] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:47:18.128[1767671238128] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:47:18.128[1767671238128] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:47:18.129[1767671238129] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:47:18.130[1767671238130] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:47:18.131[1767671238131] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@515dcb67]]
+2026-01-06 10:47:18.131[1767671238131] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:47:18.131[1767671238131] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@489ec814]]
+2026-01-06 10:47:18.132[1767671238132] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:47:18.132[1767671238132] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:47:18.197[1767671238197] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c81f9a8fe812fc1939951", parameters={}
+2026-01-06 10:47:18.197[1767671238197] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c81f9a8fe812fc1939951", parameters={}
+2026-01-06 10:47:18.197[1767671238197] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:47:18.197[1767671238197] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:47:18.200[1767671238200] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:47:18.200[1767671238200] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:47:18.200[1767671238200] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@391161f4]]
+2026-01-06 10:47:18.200[1767671238200] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@4f0a145e]]
+2026-01-06 10:47:18.201[1767671238201] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:47:18.201[1767671238201] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:47:20.005[1767671240005] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/transaction", parameters={}
+2026-01-06 10:47:20.005[1767671240005] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createTransaction(DemoTransaction)
+2026-01-06 10:47:20.006[1767671240006] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoTransaction@3a616a9d]
+2026-01-06 10:47:20.012[1767671240012] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:47:20.012[1767671240012] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoTransaction@3a616a9d]
+2026-01-06 10:47:20.013[1767671240013] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:47:23.254[1767671243254] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:47:23.254[1767671243254] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:47:23.255[1767671243255] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:47:23.255[1767671243255] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:47:23.257[1767671243257] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:47:23.257[1767671243257] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:47:23.257[1767671243257] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@54db677c]]
+2026-01-06 10:47:23.257[1767671243257] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@7cd0073b]]
+2026-01-06 10:47:23.258[1767671243258] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:47:23.258[1767671243258] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:47:23.314[1767671243314] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c81f9a8fe812fc1939951", parameters={}
+2026-01-06 10:47:23.314[1767671243314] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:47:23.315[1767671243315] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c81f9a8fe812fc1939951", parameters={}
+2026-01-06 10:47:23.315[1767671243315] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:47:23.317[1767671243317] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:47:23.317[1767671243317] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:47:23.317[1767671243317] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@463ff2d5, com.example.TradingBot.tradingbo (truncated)...]
+2026-01-06 10:47:23.317[1767671243317] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@3f85914f, com.example.TradingBot.tradingbo (truncated)...]
+2026-01-06 10:47:23.318[1767671243318] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:47:23.318[1767671243318] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:47:37.450[1767671257450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:47:37.451[1767671257451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:47:37.452[1767671257452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:47:37.453[1767671257453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:48:07.450[1767671287450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:48:07.451[1767671287451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:48:07.452[1767671287452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:48:07.453[1767671287453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:48:37.450[1767671317450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:48:37.451[1767671317451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:48:37.452[1767671317452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:48:37.453[1767671317453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:49:07.450[1767671347450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:49:07.452[1767671347452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:49:07.452[1767671347452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:49:07.453[1767671347453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:49:37.450[1767671377450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:49:37.451[1767671377451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:49:37.451[1767671377451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:49:37.452[1767671377452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:50:07.450[1767671407450] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:50:07.451[1767671407451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:50:07.451[1767671407451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:50:07.452[1767671407452] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---

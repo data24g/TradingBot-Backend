@@ -3,8 +3,6 @@ package com.example.TradingBot.tradingbot.entity;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.time.LocalDateTime;
-
 @Document(collection = "demo_transactions")
 public class DemoTransaction {
     @Id
@@ -19,11 +17,11 @@ public class DemoTransaction {
     private Double amountUSDT;
     private Double amountCoin;
     
-    private LocalDateTime date;
+    private String date; // Stored as ISO string for frontend compatibility
     private String status; // SUCCESS, FAILED, PENDING
     
     public DemoTransaction() {
-        this.date = LocalDateTime.now();
+        this.date = java.time.LocalDateTime.now().toString();
         this.status = "SUCCESS";
     }
     
@@ -52,8 +50,8 @@ public class DemoTransaction {
     public Double getAmountCoin() { return amountCoin; }
     public void setAmountCoin(Double amountCoin) { this.amountCoin = amountCoin; }
     
-    public LocalDateTime getDate() { return date; }
-    public void setDate(LocalDateTime date) { this.date = date; }
+    public String getDate() { return date; }
+    public void setDate(String date) { this.date = date; }
     
     public String getStatus() { return status; }
     public void setStatus(String status) { this.status = status; }
