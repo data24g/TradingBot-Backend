@@ -78,3 +78,505 @@
 2026-01-06 09:17:07.126[1767665827126] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
 2026-01-06 09:17:07.126[1767665827126] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing ["Đăng ký thành công"]
 2026-01-06 09:17:07.127[1767665827127] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:23:29.685[1767666209685] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/test", parameters={}
+2026-01-06 09:23:29.686[1767666209686] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:23:29.699[1767666209699] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-01-06 09:23:29.699[1767666209699] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[]]
+2026-01-06 09:23:29.704[1767666209704] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:23:51.676[1767666231676] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/plan", parameters={}
+2026-01-06 09:23:51.677[1767666231677] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createDemoPlan(DemoPlan)
+2026-01-06 09:23:51.686[1767666231686] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoPlan@7e53a8ba]
+2026-01-06 09:23:51.718[1767666231718] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-01-06 09:23:51.719[1767666231719] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoPlan@7e53a8ba]
+2026-01-06 09:23:51.720[1767666231720] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:23:59.473[1767666239473] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/user123", parameters={}
+2026-01-06 09:23:59.474[1767666239474] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:23:59.478[1767666239478] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-01-06 09:23:59.478[1767666239478] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@435d414d]]
+2026-01-06 09:23:59.479[1767666239479] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:26:16.441[1767666376441] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:26:16.442[1767666376442] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:26:16.446[1767666376446] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:26:16.446[1767666376446] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[]]
+2026-01-06 09:26:16.447[1767666376447] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:49:12.084[1767667752084] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:49:12.084[1767667752084] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:49:12.087[1767667752087] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:49:12.088[1767667752088] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:49:12.088[1767667752088] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[]]
+2026-01-06 09:49:12.092[1767667752092] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:49:12.094[1767667752094] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:49:12.101[1767667752101] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:49:12.101[1767667752101] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[]]
+2026-01-06 09:49:12.102[1767667752102] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:49:40.629[1767667780629] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/plan", parameters={}
+2026-01-06 09:49:40.629[1767667780629] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createDemoPlan(DemoPlan)
+2026-01-06 09:49:40.630[1767667780630] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoPlan@75b3d9cb]
+2026-01-06 09:49:40.668[1767667780668] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:49:40.669[1767667780669] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoPlan@75b3d9cb]
+2026-01-06 09:49:40.670[1767667780670] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:49:42.697[1767667782697] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:49:42.698[1767667782698] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:49:42.702[1767667782702] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:49:42.702[1767667782702] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@4b7a862e]]
+2026-01-06 09:49:42.704[1767667782704] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:49:49.778[1767667789778] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:49:49.778[1767667789778] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:49:49.779[1767667789779] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:49:49.779[1767667789779] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:49:49.781[1767667789781] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:49:49.781[1767667789781] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:49:49.781[1767667789781] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@5dad56ca]]
+2026-01-06 09:49:49.781[1767667789781] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@3ea488dc]]
+2026-01-06 09:49:49.782[1767667789782] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:49:49.782[1767667789782] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:49:57.229[1767667797229] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:49:57.229[1767667797229] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:49:57.230[1767667797230] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:49:57.230[1767667797230] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:49:57.232[1767667797232] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:49:57.232[1767667797232] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:49:57.232[1767667797232] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@41afe460]]
+2026-01-06 09:49:57.232[1767667797232] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@30b2b006]]
+2026-01-06 09:49:57.233[1767667797233] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:49:57.233[1767667797233] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:50:12.777[1767667812777] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/plan", parameters={}
+2026-01-06 09:50:12.777[1767667812777] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createDemoPlan(DemoPlan)
+2026-01-06 09:50:12.778[1767667812778] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoPlan@1ab77916]
+2026-01-06 09:50:12.782[1767667812782] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:50:12.782[1767667812782] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoPlan@1ab77916]
+2026-01-06 09:50:12.783[1767667812783] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:50:14.444[1767667814444] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:50:14.445[1767667814445] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:50:14.450[1767667814450] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:50:14.450[1767667814450] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@4780f241, com.example.TradingBot.tradingbot.entit (truncated)...]
+2026-01-06 09:50:14.451[1767667814451] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:50:14.472[1767667814472] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:50:14.473[1767667814473] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:50:14.475[1767667814475] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:50:14.475[1767667814475] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@77e0829b, com.example.TradingBot.tradingbot.entit (truncated)...]
+2026-01-06 09:50:14.476[1767667814476] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:50:28.800[1767667828800] | INFO  | SpringApplicationShutdownHook | o.s.b.w.e.tomcat.GracefulShutdown    - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-06 09:50:28.803[1767667828803] | INFO  | tomcat-shutdown | o.s.b.w.e.tomcat.GracefulShutdown    - Graceful shutdown complete
+2026-01-06 09:53:12.222[1767667992222] | INFO  | main       | c.e.TradingBot.TradingBotApplication - Starting TradingBotApplication using Java 21.0.9 with PID 23760 (/home/huy/Downloads/binancebotpro-main/TradingBot-Backend/target/classes started by huy in /home/huy/Downloads/binancebotpro-main/TradingBot-Backend)
+2026-01-06 09:53:12.223[1767667992223] | INFO  | main       | c.e.TradingBot.TradingBotApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-06 09:53:12.572[1767667992572] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-01-06 09:53:12.607[1767667992607] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 5 MongoDB repository interfaces.
+2026-01-06 09:53:12.727[1767667992727] | INFO  | main       | c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2026-01-06 09:53:12.727[1767667992727] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2026-01-06 09:53:12.728[1767667992728] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2026-01-06 09:53:12.728[1767667992728] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2026-01-06 09:53:12.729[1767667992729] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2026-01-06 09:53:12.729[1767667992729] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2026-01-06 09:53:12.729[1767667992729] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2026-01-06 09:53:12.729[1767667992729] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2026-01-06 09:53:12.729[1767667992729] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationInfo [org.springframework.boot.ApplicationInfoPropertySource] to EncryptableMapPropertySourceWrapper
+2026-01-06 09:53:12.788[1767667992788] | INFO  | main       | c.u.j.f.DefaultLazyPropertyFilter    - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2026-01-06 09:53:12.794[1767667992794] | INFO  | main       | c.u.j.r.DefaultLazyPropertyResolver  - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2026-01-06 09:53:12.795[1767667992795] | INFO  | main       | c.u.j.d.DefaultLazyPropertyDetector  - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2026-01-06 09:53:12.891[1767667992891] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port 8086 (http)
+2026-01-06 09:53:12.899[1767667992899] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8086"]
+2026-01-06 09:53:12.900[1767667992900] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2026-01-06 09:53:12.900[1767667992900] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-01-06 09:53:12.926[1767667992926] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2026-01-06 09:53:12.927[1767667992927] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 677 ms
+2026-01-06 09:53:13.017[1767667993017] | INFO  | main       | org.mongodb.driver.client            - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.14.0-37-generic"}, "platform": "Java/Ubuntu/21.0.9+10-Ubuntu-124.04"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4d0cc83e, com.mongodb.Jep395RecordCodecProvider@43da0955, com.mongodb.KotlinCodecProvider@bc09d57]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-01-06 09:53:13.029[1767667993029] | INFO  | cluster-ClusterId{value='695c7918f34726a3c3afcf8c', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=27, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=11027802, minRoundTripTimeNanos=0}
+2026-01-06 09:53:13.271[1767667993271] | INFO  | main       | o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2026-01-06 09:53:13.317[1767667993317] | INFO  | main       | c.e.T.t.service.ExchangeInfoManager  - Đang tải thông tin Exchange (Exchange Information)...
+2026-01-06 09:53:13.318[1767667993318] | INFO  | main       | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/exchangeInfo
+2026-01-06 09:53:14.075[1767667994075] | INFO  | main       | c.e.T.t.service.ExchangeInfoManager  - Đã tải thành công thông tin cho 582 symbols.
+2026-01-06 09:53:14.163[1767667994163] | DEBUG | main       | o.s.w.s.m.m.a.RequestMappingHandlerMapping - 27 mappings in 'requestMappingHandlerMapping'
+2026-01-06 09:53:14.206[1767667994206] | DEBUG | main       | o.s.w.s.h.SimpleUrlHandlerMapping    - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-01-06 09:53:14.275[1767667994275] | INFO  | main       | o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-06 09:53:14.295[1767667994295] | DEBUG | main       | o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-01-06 09:53:14.320[1767667994320] | DEBUG | main       | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-01-06 09:53:14.358[1767667994358] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8086"]
+2026-01-06 09:53:14.366[1767667994366] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port 8086 (http) with context path '/'
+2026-01-06 09:53:14.366[1767667994366] | INFO  | main       | c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+2026-01-06 09:53:14.367[1767667994367] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemProperties refreshed
+2026-01-06 09:53:14.367[1767667994367] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemEnvironment refreshed
+2026-01-06 09:53:14.367[1767667994367] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source random refreshed
+2026-01-06 09:53:14.367[1767667994367] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed
+2026-01-06 09:53:14.367[1767667994367] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source applicationInfo refreshed
+2026-01-06 09:53:14.367[1767667994367] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2026-01-06 09:53:14.367[1767667994367] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2026-01-06 09:53:14.367[1767667994367] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2026-01-06 09:53:14.373[1767667994373] | INFO  | main       | c.e.TradingBot.TradingBotApplication - Started TradingBotApplication in 2.352 seconds (process running for 2.616)
+2026-01-06 09:53:49.538[1767668029538] | INFO  | http-nio-8086-exec-2 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-06 09:53:49.538[1767668029538] | INFO  | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2026-01-06 09:53:49.538[1767668029538] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Detected StandardServletMultipartResolver
+2026-01-06 09:53:49.538[1767668029538] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Detected AcceptHeaderLocaleResolver
+2026-01-06 09:53:49.538[1767668029538] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Detected FixedThemeResolver
+2026-01-06 09:53:49.539[1767668029539] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6a0e97fc
+2026-01-06 09:53:49.539[1767668029539] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Detected org.springframework.web.servlet.support.SessionFlashMapManager@27ec74a3
+2026-01-06 09:53:49.539[1767668029539] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-01-06 09:53:49.539[1767668029539] | INFO  | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 1 ms
+2026-01-06 09:53:49.559[1767668029559] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:53:49.559[1767668029559] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:53:49.560[1767668029560] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:53:49.560[1767668029560] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:53:49.591[1767668029591] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:53:49.591[1767668029591] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:53:49.592[1767668029592] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@7f33fa27, com.example.TradingBot.tradingbot.entit (truncated)...]
+2026-01-06 09:53:49.592[1767668029592] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@536b885a, com.example.TradingBot.tradingbot.entit (truncated)...]
+2026-01-06 09:53:49.625[1767668029625] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:53:49.625[1767668029625] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:54:00.159[1767668040159] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:54:00.159[1767668040159] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:54:00.165[1767668040165] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:54:00.165[1767668040165] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@28b00bf2, com.example.TradingBot.tradingbot.entit (truncated)...]
+2026-01-06 09:54:00.165[1767668040165] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:54:00.166[1767668040166] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:54:00.167[1767668040167] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:54:00.170[1767668040170] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:54:00.171[1767668040171] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@750b43cf, com.example.TradingBot.tradingbot.entit (truncated)...]
+2026-01-06 09:54:00.171[1767668040171] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:56:40.361[1767668200361] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:56:40.361[1767668200361] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:56:40.361[1767668200361] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:56:40.362[1767668200362] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:56:40.365[1767668200365] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:56:40.365[1767668200365] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@354f19c7, com.example.TradingBot.tradingbot.entit (truncated)...]
+2026-01-06 09:56:40.366[1767668200366] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:56:40.366[1767668200366] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@4c4252fa, com.example.TradingBot.tradingbot.entit (truncated)...]
+2026-01-06 09:56:40.366[1767668200366] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:56:40.367[1767668200367] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:57:50.708[1767668270708] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:57:50.708[1767668270708] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:57:50.712[1767668270712] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:57:50.712[1767668270712] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@2ee9faac, com.example.TradingBot.tradingbot.entit (truncated)...]
+2026-01-06 09:57:50.713[1767668270713] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:58:31.574[1767668311574] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:58:31.574[1767668311574] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:58:31.574[1767668311574] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:58:31.574[1767668311574] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:58:31.577[1767668311577] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:58:31.577[1767668311577] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:58:31.577[1767668311577] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@1d652fff, com.example.TradingBot.tradingbot.entit (truncated)...]
+2026-01-06 09:58:31.577[1767668311577] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@5290dd5d, com.example.TradingBot.tradingbot.entit (truncated)...]
+2026-01-06 09:58:31.578[1767668311578] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:58:31.578[1767668311578] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:58:36.151[1767668316151] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:58:36.151[1767668316151] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:58:36.154[1767668316154] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:58:36.154[1767668316154] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@7ad3bce8, com.example.TradingBot.tradingbot.entit (truncated)...]
+2026-01-06 09:58:36.155[1767668316155] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:58:40.526[1767668320526] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - DELETE "/api/dca/demo/plan/695c7844357c458d84331e43", parameters={}
+2026-01-06 09:58:40.527[1767668320527] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#deleteDemoPlan(String)
+2026-01-06 09:58:40.546[1767668320546] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:58:40.546[1767668320546] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+2026-01-06 09:58:40.546[1767668320546] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed 204 NO_CONTENT
+2026-01-06 09:58:43.993[1767668323993] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - DELETE "/api/dca/demo/plan/695c7864357c458d84331e44", parameters={}
+2026-01-06 09:58:43.993[1767668323993] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#deleteDemoPlan(String)
+2026-01-06 09:58:43.996[1767668323996] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:58:43.997[1767668323997] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+2026-01-06 09:58:43.997[1767668323997] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed 204 NO_CONTENT
+2026-01-06 09:58:51.805[1767668331805] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/plan", parameters={}
+2026-01-06 09:58:51.806[1767668331806] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createDemoPlan(DemoPlan)
+2026-01-06 09:58:51.830[1767668331830] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoPlan@4fc2d668]
+2026-01-06 09:58:51.844[1767668331844] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:58:51.845[1767668331845] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoPlan@4fc2d668]
+2026-01-06 09:58:51.845[1767668331845] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:58:53.034[1767668333034] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:58:53.035[1767668333035] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:58:53.038[1767668333038] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:58:53.038[1767668333038] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@7ff328bf]]
+2026-01-06 09:58:53.040[1767668333040] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:59:01.708[1767668341708] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:59:01.708[1767668341708] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 09:59:01.709[1767668341709] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:59:01.709[1767668341709] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 09:59:01.712[1767668341712] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:59:01.712[1767668341712] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 09:59:01.713[1767668341713] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@3fb772b7]]
+2026-01-06 09:59:01.713[1767668341713] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@d7f58c1]]
+2026-01-06 09:59:01.714[1767668341714] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 09:59:01.714[1767668341714] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:00:14.374[1767668414374] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:00:14.376[1767668414376] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:00:14.376[1767668414376] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:00:14.379[1767668414379] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:00:44.375[1767668444375] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:00:44.377[1767668444377] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:00:44.377[1767668444377] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:00:44.379[1767668444379] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:01:14.375[1767668474375] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:01:14.377[1767668474377] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:01:14.377[1767668474377] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:01:14.379[1767668474379] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:01:44.375[1767668504375] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:01:44.376[1767668504376] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:01:44.376[1767668504376] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:01:44.377[1767668504377] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:01:56.865[1767668516865] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:01:56.865[1767668516865] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:01:56.865[1767668516865] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:01:56.865[1767668516865] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:01:56.868[1767668516868] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:01:56.868[1767668516868] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:01:56.868[1767668516868] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@241191dc]]
+2026-01-06 10:01:56.868[1767668516868] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@179d448f]]
+2026-01-06 10:01:56.869[1767668516869] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:01:56.869[1767668516869] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:01:56.903[1767668516903] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:01:56.903[1767668516903] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:01:56.903[1767668516903] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.h.SimpleUrlHandlerMapping    - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-06 10:01:56.903[1767668516903] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.h.SimpleUrlHandlerMapping    - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-06 10:01:56.905[1767668516905] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2026-01-06 10:01:56.905[1767668516905] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2026-01-06 10:01:56.906[1767668516906] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d.]
+2026-01-06 10:01:56.906[1767668516906] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d.]
+2026-01-06 10:01:56.907[1767668516907] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - Completed 404 NOT_FOUND
+2026-01-06 10:01:56.907[1767668516907] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - Completed 404 NOT_FOUND
+2026-01-06 10:01:56.910[1767668516910] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - "ERROR" dispatch for GET "/error", parameters={}
+2026-01-06 10:01:56.910[1767668516910] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - "ERROR" dispatch for GET "/error", parameters={}
+2026-01-06 10:01:56.911[1767668516911] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-01-06 10:01:56.911[1767668516911] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-01-06 10:01:56.915[1767668516915] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:01:56.915[1767668516915] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:01:56.915[1767668516915] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Jan 06 10:01:56 ICT 2026, status=404, error=Not Found, path=/api/dca/demo/transaction (truncated)...]
+2026-01-06 10:01:56.915[1767668516915] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Jan 06 10:01:56 ICT 2026, status=404, error=Not Found, path=/api/dca/demo/transaction (truncated)...]
+2026-01-06 10:01:56.927[1767668516927] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - Exiting from "ERROR" dispatch, status 404
+2026-01-06 10:01:56.929[1767668516929] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - Exiting from "ERROR" dispatch, status 404
+2026-01-06 10:01:58.718[1767668518718] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/transaction", parameters={}
+2026-01-06 10:01:58.719[1767668518719] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.h.SimpleUrlHandlerMapping    - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-06 10:01:58.720[1767668518720] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2026-01-06 10:01:58.721[1767668518721] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/dca/demo/transaction.]
+2026-01-06 10:01:58.721[1767668518721] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed 404 NOT_FOUND
+2026-01-06 10:01:58.722[1767668518722] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - "ERROR" dispatch for POST "/error", parameters={}
+2026-01-06 10:01:58.722[1767668518722] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-01-06 10:01:58.723[1767668518723] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:01:58.724[1767668518724] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Jan 06 10:01:58 ICT 2026, status=404, error=Not Found, path=/api/dca/demo/transaction (truncated)...]
+2026-01-06 10:01:58.727[1767668518727] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Exiting from "ERROR" dispatch, status 404
+2026-01-06 10:02:00.362[1767668520362] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:02:00.362[1767668520362] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:02:00.362[1767668520362] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:02:00.362[1767668520362] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:02:00.365[1767668520365] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:02:00.365[1767668520365] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:02:00.365[1767668520365] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@13cc5a8c]]
+2026-01-06 10:02:00.366[1767668520366] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@10cf920e]]
+2026-01-06 10:02:00.366[1767668520366] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:02:00.366[1767668520366] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:02:00.395[1767668520395] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:02:00.395[1767668520395] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:02:00.395[1767668520395] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.h.SimpleUrlHandlerMapping    - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-06 10:02:00.395[1767668520395] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.h.SimpleUrlHandlerMapping    - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-06 10:02:00.396[1767668520396] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2026-01-06 10:02:00.396[1767668520396] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d.]
+2026-01-06 10:02:00.396[1767668520396] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - Completed 404 NOT_FOUND
+2026-01-06 10:02:00.396[1767668520396] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2026-01-06 10:02:00.396[1767668520396] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - "ERROR" dispatch for GET "/error", parameters={}
+2026-01-06 10:02:00.396[1767668520396] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d.]
+2026-01-06 10:02:00.396[1767668520396] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - Completed 404 NOT_FOUND
+2026-01-06 10:02:00.396[1767668520396] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-01-06 10:02:00.396[1767668520396] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - "ERROR" dispatch for GET "/error", parameters={}
+2026-01-06 10:02:00.397[1767668520397] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-01-06 10:02:00.397[1767668520397] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:02:00.397[1767668520397] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Jan 06 10:02:00 ICT 2026, status=404, error=Not Found, path=/api/dca/demo/transaction (truncated)...]
+2026-01-06 10:02:00.397[1767668520397] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:02:00.397[1767668520397] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Jan 06 10:02:00 ICT 2026, status=404, error=Not Found, path=/api/dca/demo/transaction (truncated)...]
+2026-01-06 10:02:00.397[1767668520397] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - Exiting from "ERROR" dispatch, status 404
+2026-01-06 10:02:00.397[1767668520397] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - Exiting from "ERROR" dispatch, status 404
+2026-01-06 10:02:14.375[1767668534375] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:02:14.377[1767668534377] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:02:14.377[1767668534377] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:02:14.379[1767668534379] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:02:44.374[1767668564374] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:02:44.376[1767668564376] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:02:44.376[1767668564376] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:02:44.378[1767668564378] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:03:14.374[1767668594374] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:03:14.377[1767668594377] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:03:14.377[1767668594377] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:03:14.378[1767668594378] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:03:44.374[1767668624374] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:03:44.376[1767668624376] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:03:44.376[1767668624376] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:03:44.377[1767668624377] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:04:14.374[1767668654374] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:04:14.376[1767668654376] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:04:14.376[1767668654376] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:04:14.376[1767668654376] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:04:44.374[1767668684374] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:04:44.376[1767668684376] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:04:44.376[1767668684376] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:04:44.378[1767668684378] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:05:14.375[1767668714375] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:05:14.377[1767668714377] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:05:14.377[1767668714377] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:05:14.379[1767668714379] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:05:25.133[1767668725133] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:05:25.133[1767668725133] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:05:25.135[1767668725135] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:05:25.136[1767668725136] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@62b39ec0]]
+2026-01-06 10:05:25.136[1767668725136] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:05:25.178[1767668725178] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:05:25.178[1767668725178] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.h.SimpleUrlHandlerMapping    - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-06 10:05:25.182[1767668725182] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2026-01-06 10:05:25.183[1767668725183] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d.]
+2026-01-06 10:05:25.183[1767668725183] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - Completed 404 NOT_FOUND
+2026-01-06 10:05:25.183[1767668725183] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - "ERROR" dispatch for GET "/error", parameters={}
+2026-01-06 10:05:25.183[1767668725183] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-01-06 10:05:25.184[1767668725184] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:05:25.184[1767668725184] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Jan 06 10:05:25 ICT 2026, status=404, error=Not Found, path=/api/dca/demo/transaction (truncated)...]
+2026-01-06 10:05:25.185[1767668725185] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - Exiting from "ERROR" dispatch, status 404
+2026-01-06 10:05:27.107[1767668727107] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/plan", parameters={}
+2026-01-06 10:05:27.108[1767668727108] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createDemoPlan(DemoPlan)
+2026-01-06 10:05:27.109[1767668727109] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoPlan@61131b3a]
+2026-01-06 10:05:27.115[1767668727115] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:05:27.115[1767668727115] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoPlan@61131b3a]
+2026-01-06 10:05:27.116[1767668727116] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:05:28.355[1767668728355] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:05:28.356[1767668728356] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:05:28.359[1767668728359] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:05:28.359[1767668728359] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@16135e1d, com.example.TradingBot.tradingbot.entit (truncated)...]
+2026-01-06 10:05:28.360[1767668728360] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:05:31.277[1767668731277] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - DELETE "/api/dca/demo/plan/695c7bf7f34726a3c3afcf8e", parameters={}
+2026-01-06 10:05:31.278[1767668731278] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#deleteDemoPlan(String)
+2026-01-06 10:05:31.279[1767668731279] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:05:31.279[1767668731279] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Nothing to write: null body
+2026-01-06 10:05:31.280[1767668731280] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - Completed 204 NO_CONTENT
+2026-01-06 10:05:44.374[1767668744374] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:05:44.376[1767668744376] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:05:44.376[1767668744376] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:05:44.378[1767668744378] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:05:46.064[1767668746064] | INFO  | SpringApplicationShutdownHook | o.s.b.w.e.tomcat.GracefulShutdown    - Commencing graceful shutdown. Waiting for active requests to complete
+2026-01-06 10:05:46.072[1767668746072] | INFO  | tomcat-shutdown | o.s.b.w.e.tomcat.GracefulShutdown    - Graceful shutdown complete
+2026-01-06 10:05:46.071[1767668746071] | INFO  | cluster-ClusterId{value='695c7918f34726a3c3afcf8c', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoNodeIsRecoveringException: Command failed with error 11600 (InterruptedAtShutdown): 'interrupted at shutdown' on server localhost:27017. The full response is {"ok": 0.0, "errmsg": "interrupted at shutdown", "code": 11600, "codeName": "InterruptedAtShutdown"}
+	at com.mongodb.internal.connection.ProtocolHelper.createSpecialException(ProtocolHelper.java:264)
+	at com.mongodb.internal.connection.ProtocolHelper.getCommandFailureException(ProtocolHelper.java:206)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:520)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:469)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.lookupServerDescription(DefaultServerMonitor.java:249)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitor.run(DefaultServerMonitor.java:176)
+2026-01-06 10:12:35.258[1767669155258] | INFO  | main       | c.e.TradingBot.TradingBotApplication - Starting TradingBotApplication using Java 21.0.9 with PID 7167 (/home/huy/Downloads/binancebotpro-main/TradingBot-Backend/target/classes started by huy in /home/huy/Downloads/binancebotpro-main/TradingBot-Backend)
+2026-01-06 10:12:35.260[1767669155260] | INFO  | main       | c.e.TradingBot.TradingBotApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-06 10:12:35.620[1767669155620] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-01-06 10:12:35.664[1767669155664] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 40 ms. Found 6 MongoDB repository interfaces.
+2026-01-06 10:12:35.793[1767669155793] | INFO  | main       | c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2026-01-06 10:12:35.793[1767669155793] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2026-01-06 10:12:35.794[1767669155794] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2026-01-06 10:12:35.794[1767669155794] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2026-01-06 10:12:35.794[1767669155794] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2026-01-06 10:12:35.795[1767669155795] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2026-01-06 10:12:35.795[1767669155795] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2026-01-06 10:12:35.795[1767669155795] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2026-01-06 10:12:35.795[1767669155795] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationInfo [org.springframework.boot.ApplicationInfoPropertySource] to EncryptableMapPropertySourceWrapper
+2026-01-06 10:12:35.865[1767669155865] | INFO  | main       | c.u.j.f.DefaultLazyPropertyFilter    - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2026-01-06 10:12:35.870[1767669155870] | INFO  | main       | c.u.j.r.DefaultLazyPropertyResolver  - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2026-01-06 10:12:35.871[1767669155871] | INFO  | main       | c.u.j.d.DefaultLazyPropertyDetector  - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2026-01-06 10:12:35.992[1767669155992] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port 8086 (http)
+2026-01-06 10:12:36.001[1767669156001] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8086"]
+2026-01-06 10:12:36.004[1767669156004] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2026-01-06 10:12:36.004[1767669156004] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-01-06 10:12:36.044[1767669156044] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2026-01-06 10:12:36.044[1767669156044] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 754 ms
+2026-01-06 10:12:36.152[1767669156152] | INFO  | main       | org.mongodb.driver.client            - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.14.0-37-generic"}, "platform": "Java/Ubuntu/21.0.9+10-Ubuntu-124.04"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@498c535d, com.mongodb.Jep395RecordCodecProvider@16ee9aa7, com.mongodb.KotlinCodecProvider@4e424582]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-01-06 10:12:36.168[1767669156168] | INFO  | cluster-ClusterId{value='695c7da4a8fe812fc1939940', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=27, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=10535173, minRoundTripTimeNanos=0}
+2026-01-06 10:12:36.468[1767669156468] | INFO  | main       | o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2026-01-06 10:12:36.533[1767669156533] | INFO  | main       | c.e.T.t.service.ExchangeInfoManager  - Đang tải thông tin Exchange (Exchange Information)...
+2026-01-06 10:12:36.534[1767669156534] | INFO  | main       | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/exchangeInfo
+2026-01-06 10:12:37.076[1767669157076] | INFO  | main       | c.e.T.t.service.ExchangeInfoManager  - Đã tải thành công thông tin cho 582 symbols.
+2026-01-06 10:12:37.185[1767669157185] | DEBUG | main       | o.s.w.s.m.m.a.RequestMappingHandlerMapping - 30 mappings in 'requestMappingHandlerMapping'
+2026-01-06 10:12:37.239[1767669157239] | DEBUG | main       | o.s.w.s.h.SimpleUrlHandlerMapping    - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-01-06 10:12:37.325[1767669157325] | INFO  | main       | o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-06 10:12:37.343[1767669157343] | DEBUG | main       | o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-01-06 10:12:37.376[1767669157376] | DEBUG | main       | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-01-06 10:12:37.433[1767669157433] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8086"]
+2026-01-06 10:12:37.442[1767669157442] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port 8086 (http) with context path '/'
+2026-01-06 10:12:37.442[1767669157442] | INFO  | main       | c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+2026-01-06 10:12:37.442[1767669157442] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemProperties refreshed
+2026-01-06 10:12:37.442[1767669157442] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemEnvironment refreshed
+2026-01-06 10:12:37.442[1767669157442] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source random refreshed
+2026-01-06 10:12:37.442[1767669157442] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed
+2026-01-06 10:12:37.442[1767669157442] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source applicationInfo refreshed
+2026-01-06 10:12:37.442[1767669157442] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2026-01-06 10:12:37.442[1767669157442] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2026-01-06 10:12:37.442[1767669157442] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2026-01-06 10:12:37.453[1767669157453] | INFO  | main       | c.e.TradingBot.TradingBotApplication - Started TradingBotApplication in 2.417 seconds (process running for 2.712)
+2026-01-06 10:12:37.507[1767669157507] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:12:37.509[1767669157509] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:12:37.510[1767669157510] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:12:37.512[1767669157512] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:13:02.306[1767669182306] | INFO  | http-nio-8086-exec-1 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-06 10:13:02.306[1767669182306] | INFO  | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2026-01-06 10:13:02.306[1767669182306] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Detected StandardServletMultipartResolver
+2026-01-06 10:13:02.306[1767669182306] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Detected AcceptHeaderLocaleResolver
+2026-01-06 10:13:02.307[1767669182307] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Detected FixedThemeResolver
+2026-01-06 10:13:02.307[1767669182307] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@183ef89a
+2026-01-06 10:13:02.307[1767669182307] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Detected org.springframework.web.servlet.support.SessionFlashMapManager@408d945b
+2026-01-06 10:13:02.308[1767669182308] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-01-06 10:13:02.308[1767669182308] | INFO  | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 2 ms
+2026-01-06 10:13:02.325[1767669182325] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:13:02.327[1767669182327] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:13:02.359[1767669182359] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:13:02.360[1767669182360] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@4641379b]]
+2026-01-06 10:13:02.391[1767669182391] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:13:02.397[1767669182397] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:13:02.398[1767669182398] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:13:02.402[1767669182402] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:13:02.402[1767669182402] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[]]
+2026-01-06 10:13:02.403[1767669182403] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:13:04.784[1767669184784] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/transaction", parameters={}
+2026-01-06 10:13:04.784[1767669184784] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createTransaction(DemoTransaction)
+2026-01-06 10:13:04.840[1767669184840] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoTransaction@6c417232]
+2026-01-06 10:13:04.874[1767669184874] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:13:04.874[1767669184874] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoTransaction@6c417232]
+2026-01-06 10:13:04.875[1767669184875] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:13:07.316[1767669187316] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:13:07.316[1767669187316] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:13:07.317[1767669187317] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:13:07.317[1767669187317] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:13:07.319[1767669187319] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:13:07.320[1767669187320] | DEBUG | http-nio-8086-exec-5 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@6ff2384a]]
+2026-01-06 10:13:07.320[1767669187320] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:13:07.320[1767669187320] | DEBUG | http-nio-8086-exec-4 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@1fcf096d]]
+2026-01-06 10:13:07.321[1767669187321] | DEBUG | http-nio-8086-exec-4 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:13:07.321[1767669187321] | DEBUG | http-nio-8086-exec-5 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:13:07.357[1767669187357] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:13:07.357[1767669187357] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:13:07.357[1767669187357] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:13:07.357[1767669187357] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:13:07.362[1767669187362] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:13:07.362[1767669187362] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:13:07.363[1767669187363] | DEBUG | http-nio-8086-exec-7 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@2ecf6daa]]
+2026-01-06 10:13:07.363[1767669187363] | DEBUG | http-nio-8086-exec-6 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@467b6a1f]]
+2026-01-06 10:13:07.363[1767669187363] | DEBUG | http-nio-8086-exec-7 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:13:07.363[1767669187363] | DEBUG | http-nio-8086-exec-6 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:13:07.451[1767669187451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:13:07.454[1767669187454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:13:07.454[1767669187454] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:13:07.457[1767669187457] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
+2026-01-06 10:13:08.919[1767669188919] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:13:08.919[1767669188919] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/plans/demo_user", parameters={}
+2026-01-06 10:13:08.919[1767669188919] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:13:08.919[1767669188919] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getDemoPlansByUser(String)
+2026-01-06 10:13:08.921[1767669188921] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:13:08.921[1767669188921] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:13:08.921[1767669188921] | DEBUG | http-nio-8086-exec-8 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@696bc2d3]]
+2026-01-06 10:13:08.921[1767669188921] | DEBUG | http-nio-8086-exec-9 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoPlan@7cdc652c]]
+2026-01-06 10:13:08.922[1767669188922] | DEBUG | http-nio-8086-exec-9 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:13:08.922[1767669188922] | DEBUG | http-nio-8086-exec-8 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:13:08.945[1767669188945] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:13:08.945[1767669188945] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:13:08.949[1767669188949] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - GET "/api/dca/demo/transactions/695c7a6bf34726a3c3afcf8d", parameters={}
+2026-01-06 10:13:08.949[1767669188949] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#getTransactionsByPlanId(String)
+2026-01-06 10:13:08.949[1767669188949] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:13:08.949[1767669188949] | DEBUG | http-nio-8086-exec-10 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@6643d0cf]]
+2026-01-06 10:13:08.950[1767669188950] | DEBUG | http-nio-8086-exec-10 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:13:08.952[1767669188952] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:13:08.952[1767669188952] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [[com.example.TradingBot.tradingbot.entity.DemoTransaction@7e754e0c]]
+2026-01-06 10:13:08.952[1767669188952] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:13:11.294[1767669191294] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - POST "/api/dca/demo/transaction", parameters={}
+2026-01-06 10:13:11.295[1767669191295] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.tradingbot.controller.DemoPlanController#createTransaction(DemoTransaction)
+2026-01-06 10:13:11.296[1767669191296] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.tradingbot.entity.DemoTransaction@54c0c34a]
+2026-01-06 10:13:11.305[1767669191305] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2026-01-06 10:13:11.306[1767669191306] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [com.example.TradingBot.tradingbot.entity.DemoTransaction@54c0c34a]
+2026-01-06 10:13:11.307[1767669191307] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK
+2026-01-06 10:13:37.451[1767669217451] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
+2026-01-06 10:13:37.453[1767669217453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
+2026-01-06 10:13:37.453[1767669217453] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
+2026-01-06 10:13:37.455[1767669217455] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---

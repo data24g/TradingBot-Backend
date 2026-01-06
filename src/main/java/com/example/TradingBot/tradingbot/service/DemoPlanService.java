@@ -3,7 +3,9 @@ package com.example.TradingBot.tradingbot.service;
 import com.example.TradingBot.auth.model.UserAccount;
 import com.example.TradingBot.auth.repository.UserAccountRepository;
 import com.example.TradingBot.tradingbot.entity.DemoPlan;
+import com.example.TradingBot.tradingbot.entity.DemoTransaction;
 import com.example.TradingBot.tradingbot.repository.DemoPlanRepository;
+import com.example.TradingBot.tradingbot.repository.DemoTransactionRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +22,9 @@ public class DemoPlanService {
 
     @Autowired
     private DemoPlanRepository demoPlanRepository;
+
+    @Autowired
+    private DemoTransactionRepository demoTransactionRepository;
 
     @Autowired
     private UserAccountRepository userAccountRepository;
@@ -97,25 +102,70 @@ public class DemoPlanService {
     private void executeDemoTrade(DemoPlan plan) {
         try {
             double currentPrice = marketDataService.getCurrentPrice(plan.getSymbol());
+            double coins = plan.getAmountUSD() / currentPrice;
             
             if ("BUY".equals(plan.getSide())) {
-                double coins = plan.getAmountUSD() / currentPrice;
                 plan.setTotalCoins(plan.getTotalCoins() + coins);
                 plan.setTotalInvested(plan.getTotalInvested() + plan.getAmountUSD());
             } else if ("SELL".equals(plan.getSide())) {
-                double coins = plan.getAmountUSD() / currentPrice;
                 plan.setTotalCoins(plan.getTotalCoins() - coins);
                 plan.setTotalInvested(plan.getTotalInvested() - plan.getAmountUSD());
             }
             
             plan.setCurrentValue(plan.getTotalCoins() * currentPrice);
             
-            logger.info("Demo trade executed: {} {} {} at ${}. Total coins: {}", 
-                plan.getSide(), plan.getAmountUSD(), plan.getSymbol(), currentPrice, plan.getTotalCoins());
+            // Lưu transaction vào database
+            DemoTransaction transaction = new DemoTransaction();
+            transaction.setPlanId(plan.getId());
+            transaction.setUserId(plan.getUserId());
+            transaction.setSymbol(plan.getSymbol());
+            transaction.setSide(plan.getSide());
+            transaction.setPrice(currentPrice);
+            transaction.setAmountUSDT(plan.getAmountUSD());
+            transaction.setAmountCoin(coins);
+            transaction.setDate(LocalDateTime.now());
+            transaction.setStatus("SUCCESS");
+            demoTransactionRepository.save(transaction);
+            
+            logger.info("Demo trade executed: {} {} {} at ${}. Total coins: {}. Transaction saved: {}", 
+                plan.getSide(), plan.getAmountUSD(), plan.getSymbol(), currentPrice, plan.getTotalCoins(), transaction.getId());
                 
         } catch (Exception e) {
             logger.error("Error executing demo trade: {}", e.getMessage());
         }
+    }
+
+    // Method để tạo transaction từ API (Frontend gọi)
+    public DemoTransaction createTransaction(DemoTransaction transaction) {
+        DemoPlan plan = findById(transaction.getPlanId());
+        if (plan != null) {
+            // Cập nhật plan totals
+            double currentPrice = transaction.getPrice();
+            double coins = transaction.getAmountCoin();
+            
+            if ("BUY".equals(transaction.getSide())) {
+                plan.setTotalCoins(plan.getTotalCoins() + coins);
+                plan.setTotalInvested(plan.getTotalInvested() + transaction.getAmountUSDT());
+            } else if ("SELL".equals(transaction.getSide())) {
+                plan.setTotalCoins(plan.getTotalCoins() - coins);
+                plan.setTotalInvested(plan.getTotalInvested() - transaction.getAmountUSDT());
+            }
+            
+            plan.setCurrentValue(plan.getTotalCoins() * currentPrice);
+            demoPlanRepository.save(plan);
+        }
+        
+        return demoTransactionRepository.save(transaction);
+    }
+
+    // Lấy tất cả transactions của một plan
+    public List<DemoTransaction> getTransactionsByPlanId(String planId) {
+        return demoTransactionRepository.findByPlanIdOrderByDateDesc(planId);
+    }
+
+    // Lấy tất cả transactions của một user
+    public List<DemoTransaction> getTransactionsByUserId(String userId) {
+        return demoTransactionRepository.findByUserId(userId);
     }
 
     private LocalDateTime computeNextRun(DemoPlan plan) {

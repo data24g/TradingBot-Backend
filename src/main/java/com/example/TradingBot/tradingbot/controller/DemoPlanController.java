@@ -1,6 +1,7 @@
 package com.example.TradingBot.tradingbot.controller;
 
 import com.example.TradingBot.tradingbot.entity.DemoPlan;
+import com.example.TradingBot.tradingbot.entity.DemoTransaction;
 import com.example.TradingBot.tradingbot.service.DemoPlanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -56,6 +57,26 @@ public class DemoPlanController {
     public ResponseEntity<Void> deleteDemoPlan(@PathVariable String id) {
         demoPlanService.deleteDemoPlan(id);
         return ResponseEntity.noContent().build();
+    }
+
+    // ============ TRANSACTION ENDPOINTS ============
+
+    @PostMapping("/transaction")
+    public ResponseEntity<DemoTransaction> createTransaction(@RequestBody DemoTransaction transaction) {
+        DemoTransaction created = demoPlanService.createTransaction(transaction);
+        return ResponseEntity.ok(created);
+    }
+
+    @GetMapping("/transactions/{planId}")
+    public ResponseEntity<List<DemoTransaction>> getTransactionsByPlanId(@PathVariable String planId) {
+        List<DemoTransaction> transactions = demoPlanService.getTransactionsByPlanId(planId);
+        return ResponseEntity.ok(transactions);
+    }
+
+    @GetMapping("/transactions/user/{userId}")
+    public ResponseEntity<List<DemoTransaction>> getTransactionsByUserId(@PathVariable String userId) {
+        List<DemoTransaction> transactions = demoPlanService.getTransactionsByUserId(userId);
+        return ResponseEntity.ok(transactions);
     }
 }
 
