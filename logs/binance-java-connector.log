@@ -1,303 +1,80 @@
-2026-01-05 10:55:06.715[1767585306715] | INFO  | main       | c.e.TradingBot.TradingBotApplication - Starting TradingBotApplication using Java 21.0.9 with PID 29600 (/home/huy/Downloads/binancebotpro-main/TradingBot-Backend/target/classes started by huy in /home/huy/Downloads/binancebotpro-main/TradingBot-Backend)
-2026-01-05 10:55:06.717[1767585306717] | INFO  | main       | c.e.TradingBot.TradingBotApplication - No active profile set, falling back to 1 default profile: "default"
-2026-01-05 10:55:07.363[1767585307363] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
-2026-01-05 10:55:07.445[1767585307445] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 4 MongoDB repository interfaces.
-2026-01-05 10:55:07.684[1767585307684] | INFO  | main       | c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
-2026-01-05 10:55:07.685[1767585307685] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
-2026-01-05 10:55:07.686[1767585307686] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
-2026-01-05 10:55:07.686[1767585307686] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
-2026-01-05 10:55:07.687[1767585307687] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
-2026-01-05 10:55:07.687[1767585307687] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
-2026-01-05 10:55:07.687[1767585307687] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
-2026-01-05 10:55:07.688[1767585307688] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
-2026-01-05 10:55:07.688[1767585307688] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationInfo [org.springframework.boot.ApplicationInfoPropertySource] to EncryptableMapPropertySourceWrapper
-2026-01-05 10:55:07.832[1767585307832] | INFO  | main       | c.u.j.f.DefaultLazyPropertyFilter    - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
-2026-01-05 10:55:07.842[1767585307842] | INFO  | main       | c.u.j.r.DefaultLazyPropertyResolver  - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
-2026-01-05 10:55:07.845[1767585307845] | INFO  | main       | c.u.j.d.DefaultLazyPropertyDetector  - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
-2026-01-05 10:55:08.083[1767585308083] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port 8086 (http)
-2026-01-05 10:55:08.094[1767585308094] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8086"]
-2026-01-05 10:55:08.099[1767585308099] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
-2026-01-05 10:55:08.099[1767585308099] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.48]
-2026-01-05 10:55:08.167[1767585308167] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
-2026-01-05 10:55:08.169[1767585308169] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1391 ms
-2026-01-05 10:55:08.354[1767585308354] | INFO  | main       | org.mongodb.driver.client            - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.14.0-37-generic"}, "platform": "Java/Ubuntu/21.0.9+10-Ubuntu-124.04"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@1d7eb170, com.mongodb.Jep395RecordCodecProvider@5b251fb9, com.mongodb.KotlinCodecProvider@67d4c48d]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
-2026-01-05 10:55:08.379[1767585308379] | INFO  | cluster-ClusterId{value='695b361cae07dfa5e5408bbe', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=27, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=22537005, minRoundTripTimeNanos=0}
-2026-01-05 10:55:08.857[1767585308857] | INFO  | main       | o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
-2026-01-05 10:55:08.947[1767585308947] | INFO  | main       | c.e.T.t.service.ExchangeInfoManager  - Đang tải thông tin Exchange (Exchange Information)...
-2026-01-05 10:55:08.949[1767585308949] | INFO  | main       | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/exchangeInfo
-2026-01-05 10:55:09.560[1767585309560] | INFO  | main       | c.e.T.t.service.ExchangeInfoManager  - Đã tải thành công thông tin cho 582 symbols.
-2026-01-05 10:55:09.768[1767585309768] | DEBUG | main       | o.s.w.s.m.m.a.RequestMappingHandlerMapping - 18 mappings in 'requestMappingHandlerMapping'
-2026-01-05 10:55:09.887[1767585309887] | DEBUG | main       | o.s.w.s.h.SimpleUrlHandlerMapping    - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2026-01-05 10:55:10.042[1767585310042] | INFO  | main       | o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
-2026-01-05 10:55:10.073[1767585310073] | DEBUG | main       | o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2026-01-05 10:55:10.157[1767585310157] | DEBUG | main       | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2026-01-05 10:55:10.274[1767585310274] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8086"]
-2026-01-05 10:55:10.295[1767585310295] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port 8086 (http) with context path '/'
-2026-01-05 10:55:10.296[1767585310296] | INFO  | main       | c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
-2026-01-05 10:55:10.297[1767585310297] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemProperties refreshed
-2026-01-05 10:55:10.298[1767585310298] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemEnvironment refreshed
-2026-01-05 10:55:10.298[1767585310298] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source random refreshed
-2026-01-05 10:55:10.298[1767585310298] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed
-2026-01-05 10:55:10.298[1767585310298] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source applicationInfo refreshed
-2026-01-05 10:55:10.299[1767585310299] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
-2026-01-05 10:55:10.299[1767585310299] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
-2026-01-05 10:55:10.299[1767585310299] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
-2026-01-05 10:55:10.319[1767585310319] | INFO  | main       | c.e.TradingBot.TradingBotApplication - Started TradingBotApplication in 4.008 seconds (process running for 4.636)
-2026-01-05 10:55:10.421[1767585310421] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 10:55:10.424[1767585310424] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 10:55:10.424[1767585310424] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 10:55:10.429[1767585310429] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 10:55:40.316[1767585340316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 10:55:40.319[1767585340319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 10:55:40.319[1767585340319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 10:55:40.322[1767585340322] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 10:56:10.316[1767585370316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 10:56:10.318[1767585370318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 10:56:10.319[1767585370319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 10:56:10.321[1767585370321] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 10:56:40.317[1767585400317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 10:56:40.319[1767585400319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 10:56:40.320[1767585400320] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 10:56:40.322[1767585400322] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 10:57:10.316[1767585430316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 10:57:10.319[1767585430319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 10:57:10.319[1767585430319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 10:57:10.322[1767585430322] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 10:57:40.316[1767585460316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 10:57:40.319[1767585460319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 10:57:40.319[1767585460319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 10:57:40.321[1767585460321] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 10:58:10.318[1767585490318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 10:58:10.321[1767585490321] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 10:58:10.322[1767585490322] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 10:58:10.324[1767585490324] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 10:58:40.316[1767585520316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 10:58:40.319[1767585520319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 10:58:40.319[1767585520319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 10:58:40.321[1767585520321] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 10:59:10.316[1767585550316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 10:59:10.319[1767585550319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 10:59:10.319[1767585550319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 10:59:10.321[1767585550321] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 10:59:40.316[1767585580316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 10:59:40.318[1767585580318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 10:59:40.318[1767585580318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 10:59:40.320[1767585580320] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:00:10.316[1767585610316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:00:10.318[1767585610318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:00:10.318[1767585610318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:00:10.320[1767585610320] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:00:40.316[1767585640316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:00:40.318[1767585640318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:00:40.318[1767585640318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:00:40.320[1767585640320] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:01:10.315[1767585670315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:01:10.317[1767585670317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:01:10.318[1767585670318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:01:10.319[1767585670319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:01:40.316[1767585700316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:01:40.318[1767585700318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:01:40.318[1767585700318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:01:40.319[1767585700319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:02:10.316[1767585730316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:02:10.317[1767585730317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:02:10.318[1767585730318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:02:10.319[1767585730319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:02:40.316[1767585760316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:02:40.317[1767585760317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:02:40.317[1767585760317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:02:40.319[1767585760319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:03:10.316[1767585790316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:03:10.318[1767585790318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:03:10.318[1767585790318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:03:10.320[1767585790320] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:03:40.316[1767585820316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:03:40.318[1767585820318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:03:40.318[1767585820318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:03:40.320[1767585820320] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:04:10.315[1767585850315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:04:10.317[1767585850317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:04:10.317[1767585850317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:04:10.319[1767585850319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:04:40.316[1767585880316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:04:40.319[1767585880319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:04:40.319[1767585880319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:04:40.321[1767585880321] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:05:10.316[1767585910316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:05:10.318[1767585910318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:05:10.318[1767585910318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:05:10.320[1767585910320] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:05:40.316[1767585940316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:05:40.318[1767585940318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:05:40.318[1767585940318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:05:40.319[1767585940319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:06:10.317[1767585970317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:06:10.319[1767585970319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:06:10.319[1767585970319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:06:10.321[1767585970321] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:06:40.316[1767586000316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:06:40.318[1767586000318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:06:40.318[1767586000318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:06:40.319[1767586000319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:07:10.316[1767586030316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:07:10.317[1767586030317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:07:10.318[1767586030318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:07:10.319[1767586030319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:07:40.314[1767586060314] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:07:40.315[1767586060315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:07:40.315[1767586060315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:07:40.316[1767586060316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:08:10.314[1767586090314] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:08:10.316[1767586090316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:08:10.316[1767586090316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:08:10.317[1767586090317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:08:40.316[1767586120316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:08:40.318[1767586120318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:08:40.318[1767586120318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:08:40.319[1767586120319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:09:10.315[1767586150315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:09:10.317[1767586150317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:09:10.317[1767586150317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:09:10.319[1767586150319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:09:40.314[1767586180314] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:09:40.316[1767586180316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:09:40.316[1767586180316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:09:40.317[1767586180317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:10:10.316[1767586210316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:10:10.318[1767586210318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:10:10.318[1767586210318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:10:10.320[1767586210320] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:10:40.316[1767586240316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:10:40.319[1767586240319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:10:40.319[1767586240319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:10:40.321[1767586240321] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:11:10.315[1767586270315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:11:10.318[1767586270318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:11:10.318[1767586270318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:11:10.320[1767586270320] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:11:40.315[1767586300315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:11:40.317[1767586300317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:11:40.317[1767586300317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:11:40.318[1767586300318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:12:10.315[1767586330315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:12:10.317[1767586330317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:12:10.318[1767586330318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:12:10.319[1767586330319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:12:40.315[1767586360315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:12:40.316[1767586360316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:12:40.316[1767586360316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:12:40.317[1767586360317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:13:10.315[1767586390315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:13:10.316[1767586390316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:13:10.316[1767586390316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:13:10.317[1767586390317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:13:40.315[1767586420315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:13:40.317[1767586420317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:13:40.317[1767586420317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:13:40.319[1767586420319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:14:10.315[1767586450315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:14:10.316[1767586450316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:14:10.316[1767586450316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:14:10.317[1767586450317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:14:40.315[1767586480315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:14:40.318[1767586480318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:14:40.318[1767586480318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:14:40.320[1767586480320] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:15:10.318[1767586510318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:15:10.321[1767586510321] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:15:10.322[1767586510322] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:15:10.324[1767586510324] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:15:40.316[1767586540316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:15:40.317[1767586540317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:15:40.318[1767586540318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:15:40.320[1767586540320] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:16:10.317[1767586570317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:16:10.319[1767586570319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:16:10.319[1767586570319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:16:10.320[1767586570320] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:16:40.314[1767586600314] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:16:40.315[1767586600315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:16:40.315[1767586600315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:16:40.316[1767586600316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:17:10.316[1767586630316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:17:10.318[1767586630318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:17:10.318[1767586630318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:17:10.319[1767586630319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:17:40.316[1767586660316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:17:40.318[1767586660318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:17:40.318[1767586660318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:17:40.320[1767586660320] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:18:10.315[1767586690315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:18:10.317[1767586690317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:18:10.317[1767586690317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:18:10.318[1767586690318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:18:40.315[1767586720315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:18:40.317[1767586720317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:18:40.317[1767586720317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:18:40.319[1767586720319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:19:10.315[1767586750315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:19:10.317[1767586750317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:19:10.317[1767586750317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:19:10.318[1767586750318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:19:40.315[1767586780315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:19:40.317[1767586780317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:19:40.317[1767586780317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:19:40.318[1767586780318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:20:10.315[1767586810315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:20:10.317[1767586810317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:20:10.317[1767586810317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:20:10.319[1767586810319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:20:40.314[1767586840314] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:20:40.316[1767586840316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:20:40.316[1767586840316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:20:40.317[1767586840317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:21:10.315[1767586870315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:21:10.317[1767586870317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:21:10.317[1767586870317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:21:10.318[1767586870318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:21:40.315[1767586900315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:21:40.317[1767586900317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:21:40.317[1767586900317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:21:40.319[1767586900319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:22:10.315[1767586930315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:22:10.317[1767586930317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:22:10.317[1767586930317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:22:10.319[1767586930319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:22:40.315[1767586960315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:22:40.317[1767586960317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:22:40.317[1767586960317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:22:40.318[1767586960318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:23:10.316[1767586990316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:23:10.317[1767586990317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:23:10.317[1767586990317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:23:10.319[1767586990319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:23:40.314[1767587020314] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:23:40.315[1767587020315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:23:40.315[1767587020315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:23:40.316[1767587020316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:24:10.315[1767587050315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:24:10.317[1767587050317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:24:10.317[1767587050317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:24:10.318[1767587050318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:24:40.315[1767587080315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:24:40.317[1767587080317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:24:40.317[1767587080317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:24:40.319[1767587080319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:25:10.315[1767587110315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:25:10.317[1767587110317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:25:10.317[1767587110317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:25:10.318[1767587110318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:25:40.316[1767587140316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:25:40.317[1767587140317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:25:40.318[1767587140318] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:25:40.319[1767587140319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:26:10.315[1767587170315] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:26:10.317[1767587170317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:26:10.317[1767587170317] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:26:10.319[1767587170319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:26:40.316[1767587200316] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Bắt đầu giám sát các lệnh đang mở ---
-2026-01-05 11:26:40.319[1767587200319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- MONITOR: Không có lệnh nào đang mở để giám sát. ---
-2026-01-05 11:26:40.319[1767587200319] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Bắt đầu quét các cơ hội giao dịch mới ---
-2026-01-05 11:26:40.320[1767587200320] | INFO  | scheduling-1 | c.e.T.t.schedule.MasterScheduler     - --- SCANNER: Không có tài khoản nào đang hoạt động. ---
-2026-01-05 11:26:54.425[1767587214425] | INFO  | SpringApplicationShutdownHook | o.s.b.w.e.tomcat.GracefulShutdown    - Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-05 11:26:54.427[1767587214427] | INFO  | tomcat-shutdown | o.s.b.w.e.tomcat.GracefulShutdown    - Graceful shutdown complete
+2026-01-06 09:16:07.832[1767665767832] | INFO  | main       | c.e.TradingBot.TradingBotApplication - Starting TradingBotApplication using Java 21.0.9 with PID 9861 (/home/huy/Downloads/binancebotpro-main/TradingBot-Backend/target/classes started by huy in /home/huy/Downloads/binancebotpro-main/TradingBot-Backend)
+2026-01-06 09:16:07.834[1767665767834] | INFO  | main       | c.e.TradingBot.TradingBotApplication - No active profile set, falling back to 1 default profile: "default"
+2026-01-06 09:16:08.292[1767665768292] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2026-01-06 09:16:08.343[1767665768343] | INFO  | main       | o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 5 MongoDB repository interfaces.
+2026-01-06 09:16:08.525[1767665768525] | INFO  | main       | c.u.j.c.EnableEncryptablePropertiesBeanFactoryPostProcessor - Post-processing PropertySource instances
+2026-01-06 09:16:08.525[1767665768525] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2026-01-06 09:16:08.526[1767665768526] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2026-01-06 09:16:08.526[1767665768526] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2026-01-06 09:16:08.526[1767665768526] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2026-01-06 09:16:08.527[1767665768527] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2026-01-06 09:16:08.527[1767665768527] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2026-01-06 09:16:08.527[1767665768527] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2026-01-06 09:16:08.527[1767665768527] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource applicationInfo [org.springframework.boot.ApplicationInfoPropertySource] to EncryptableMapPropertySourceWrapper
+2026-01-06 09:16:08.599[1767665768599] | INFO  | main       | c.u.j.f.DefaultLazyPropertyFilter    - Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2026-01-06 09:16:08.606[1767665768606] | INFO  | main       | c.u.j.r.DefaultLazyPropertyResolver  - Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2026-01-06 09:16:08.607[1767665768607] | INFO  | main       | c.u.j.d.DefaultLazyPropertyDetector  - Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2026-01-06 09:16:08.740[1767665768740] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat initialized with port 8086 (http)
+2026-01-06 09:16:08.749[1767665768749] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8086"]
+2026-01-06 09:16:08.751[1767665768751] | INFO  | main       | o.a.catalina.core.StandardService    - Starting service [Tomcat]
+2026-01-06 09:16:08.751[1767665768751] | INFO  | main       | o.a.catalina.core.StandardEngine     - Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-01-06 09:16:08.787[1767665768787] | INFO  | main       | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2026-01-06 09:16:08.788[1767665768788] | INFO  | main       | o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 919 ms
+2026-01-06 09:16:08.913[1767665768913] | INFO  | main       | org.mongodb.driver.client            - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.5.2"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "6.14.0-37-generic"}, "platform": "Java/Ubuntu/21.0.9+10-Ubuntu-124.04"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@629e8212, com.mongodb.Jep395RecordCodecProvider@498c535d, com.mongodb.KotlinCodecProvider@16ee9aa7]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverMonitoringMode=AUTO, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null, timeoutMS=null}
+2026-01-06 09:16:08.928[1767665768928] | INFO  | cluster-ClusterId{value='695c7068357c458d84331e40', description='null'}-localhost:27017 | org.mongodb.driver.cluster           - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, cryptd=false, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=27, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=12239676, minRoundTripTimeNanos=0}
+2026-01-06 09:16:09.225[1767665769225] | INFO  | main       | o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+2026-01-06 09:16:09.280[1767665769280] | INFO  | main       | c.e.T.t.service.ExchangeInfoManager  - Đang tải thông tin Exchange (Exchange Information)...
+2026-01-06 09:16:09.281[1767665769281] | INFO  | main       | c.b.c.f.client.utils.RequestHandler  - GET https://fapi.binance.com/fapi/v1/exchangeInfo
+2026-01-06 09:16:09.856[1767665769856] | INFO  | main       | c.e.T.t.service.ExchangeInfoManager  - Đã tải thành công thông tin cho 582 symbols.
+2026-01-06 09:16:09.986[1767665769986] | DEBUG | main       | o.s.w.s.m.m.a.RequestMappingHandlerMapping - 27 mappings in 'requestMappingHandlerMapping'
+2026-01-06 09:16:10.044[1767665770044] | DEBUG | main       | o.s.w.s.h.SimpleUrlHandlerMapping    - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-01-06 09:16:10.141[1767665770141] | INFO  | main       | o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-01-06 09:16:10.167[1767665770167] | DEBUG | main       | o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-01-06 09:16:10.199[1767665770199] | DEBUG | main       | o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-01-06 09:16:10.255[1767665770255] | INFO  | main       | o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8086"]
+2026-01-06 09:16:10.266[1767665770266] | INFO  | main       | o.s.b.w.e.tomcat.TomcatWebServer     - Tomcat started on port 8086 (http) with context path '/'
+2026-01-06 09:16:10.266[1767665770266] | INFO  | main       | c.u.j.c.RefreshScopeRefreshedEventListener - Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+2026-01-06 09:16:10.267[1767665770267] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemProperties refreshed
+2026-01-06 09:16:10.267[1767665770267] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source systemEnvironment refreshed
+2026-01-06 09:16:10.267[1767665770267] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source random refreshed
+2026-01-06 09:16:10.267[1767665770267] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source Config resource 'class path resource [application.properties]' via location 'optional:classpath:/' refreshed
+2026-01-06 09:16:10.267[1767665770267] | INFO  | main       | c.u.j.c.CachingDelegateEncryptablePropertySource - Property Source applicationInfo refreshed
+2026-01-06 09:16:10.267[1767665770267] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2026-01-06 09:16:10.267[1767665770267] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2026-01-06 09:16:10.267[1767665770267] | INFO  | main       | c.u.j.EncryptablePropertySourceConverter - Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2026-01-06 09:16:10.275[1767665770275] | INFO  | main       | c.e.TradingBot.TradingBotApplication - Started TradingBotApplication in 2.712 seconds (process running for 3.116)
+2026-01-06 09:16:59.266[1767665819266] | INFO  | http-nio-8086-exec-1 | o.a.c.c.C.[Tomcat].[localhost].[/]   - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-01-06 09:16:59.267[1767665819267] | INFO  | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Initializing Servlet 'dispatcherServlet'
+2026-01-06 09:16:59.267[1767665819267] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Detected StandardServletMultipartResolver
+2026-01-06 09:16:59.267[1767665819267] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Detected AcceptHeaderLocaleResolver
+2026-01-06 09:16:59.267[1767665819267] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Detected FixedThemeResolver
+2026-01-06 09:16:59.268[1767665819268] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@77e730bd
+2026-01-06 09:16:59.268[1767665819268] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Detected org.springframework.web.servlet.support.SessionFlashMapManager@d3d5094
+2026-01-06 09:16:59.269[1767665819269] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-01-06 09:16:59.269[1767665819269] | INFO  | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed initialization in 2 ms
+2026-01-06 09:16:59.293[1767665819293] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - GET "/actuator/health", parameters={}
+2026-01-06 09:16:59.296[1767665819296] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.h.SimpleUrlHandlerMapping    - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-06 09:16:59.302[1767665819302] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2026-01-06 09:16:59.308[1767665819308] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource actuator/health.]
+2026-01-06 09:16:59.309[1767665819309] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Completed 404 NOT_FOUND
+2026-01-06 09:16:59.314[1767665819314] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - "ERROR" dispatch for GET "/error", parameters={}
+2026-01-06 09:16:59.316[1767665819316] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-01-06 09:16:59.341[1767665819341] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-01-06 09:16:59.342[1767665819342] | DEBUG | http-nio-8086-exec-1 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Jan 06 09:16:59 ICT 2026, status=404, error=Not Found, path=/actuator/health}]
+2026-01-06 09:16:59.385[1767665819385] | DEBUG | http-nio-8086-exec-1 | o.s.web.servlet.DispatcherServlet    - Exiting from "ERROR" dispatch, status 404
+2026-01-06 09:17:05.932[1767665825932] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - GET "/api/auth/test", parameters={}
+2026-01-06 09:17:05.934[1767665825934] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.h.SimpleUrlHandlerMapping    - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2026-01-06 09:17:05.935[1767665825935] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2026-01-06 09:17:05.935[1767665825935] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/auth/test.]
+2026-01-06 09:17:05.936[1767665825936] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Completed 404 NOT_FOUND
+2026-01-06 09:17:05.937[1767665825937] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - "ERROR" dispatch for GET "/error", parameters={}
+2026-01-06 09:17:05.937[1767665825937] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2026-01-06 09:17:05.939[1767665825939] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2026-01-06 09:17:05.940[1767665825940] | DEBUG | http-nio-8086-exec-2 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{timestamp=Tue Jan 06 09:17:05 ICT 2026, status=404, error=Not Found, path=/api/auth/test}]
+2026-01-06 09:17:05.940[1767665825940] | DEBUG | http-nio-8086-exec-2 | o.s.web.servlet.DispatcherServlet    - Exiting from "ERROR" dispatch, status 404
+2026-01-06 09:17:06.930[1767665826930] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - POST "/api/auth/register", parameters={}
+2026-01-06 09:17:06.932[1767665826932] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.TradingBot.auth.controller.AuthController#register(RegisterRequest)
+2026-01-06 09:17:06.964[1767665826964] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [com.example.TradingBot.auth.dto.RegisterRequest@20bbb8d4]
+2026-01-06 09:17:07.126[1767665827126] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2026-01-06 09:17:07.126[1767665827126] | DEBUG | http-nio-8086-exec-3 | o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing ["Đăng ký thành công"]
+2026-01-06 09:17:07.127[1767665827127] | DEBUG | http-nio-8086-exec-3 | o.s.web.servlet.DispatcherServlet    - Completed 200 OK

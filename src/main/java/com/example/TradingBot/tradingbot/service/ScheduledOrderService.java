@@ -45,6 +45,10 @@ public class ScheduledOrderService {
         return scheduledOrderRepository.findByUserId(userId);
     }
 
+    public void deleteOrder(String id) {
+        scheduledOrderRepository.deleteById(id);
+    }
+
     public List<ScheduledOrder> findDueOrders(LocalDateTime now) {
         return scheduledOrderRepository.findByActiveTrueAndNextRunBefore(now);
     }

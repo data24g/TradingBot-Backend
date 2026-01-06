@@ -22,6 +22,26 @@ public class MarketDataService {
     private TradingStrategyService tradingStrategyService;
 
     /**
+     * Lấy giá hiện tại của một symbol.
+     * @param symbol Tên cặp giao dịch (vd: "BTCUSDT").
+     * @return giá hiện tại, hoặc 0.0 nếu không lấy được.
+     */
+    public double getCurrentPrice(String symbol) {
+        try {
+            // Lấy 1 nến mới nhất để lấy giá đóng
+            BarSeries series = binanceDataService.fetchKlineData(symbol, "1m", 1);
+            if (series != null && series.getBarCount() > 0) {
+                return series.getLastBar().getClosePrice().doubleValue();
+            }
+            logger.warn("Không lấy được dữ liệu giá cho symbol: {}", symbol);
+            return 0.0;
+        } catch (Exception e) {
+            logger.error("Lỗi khi lấy giá cho {}: {}", symbol, e.getMessage());
+            return 0.0;
+        }
+    }
+
+    /**
      * Lấy dữ liệu phân tích trạng thái thị trường đầy đủ cho một symbol.
      * @param symbol Tên cặp giao dịch (vd: "BTCUSDT").
      * @return một MarketStateDTO chứa thông tin, hoặc null nếu không thể phân tích.
