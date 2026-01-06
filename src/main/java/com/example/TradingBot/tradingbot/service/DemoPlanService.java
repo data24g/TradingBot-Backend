@@ -123,7 +123,7 @@ public class DemoPlanService {
             transaction.setPrice(currentPrice);
             transaction.setAmountUSDT(plan.getAmountUSD());
             transaction.setAmountCoin(coins);
-            transaction.setDate(LocalDateTime.now().toString()); // Store as ISO string
+            // Date will be set by constructor using Instant.now().toString() for proper ISO format
             transaction.setStatus("SUCCESS");
             demoTransactionRepository.save(transaction);
             

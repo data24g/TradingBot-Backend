@@ -21,7 +21,8 @@ public class DemoTransaction {
     private String status; // SUCCESS, FAILED, PENDING
     
     public DemoTransaction() {
-        this.date = java.time.LocalDateTime.now().toString();
+        // Use Instant with timezone for proper ISO format that frontend can parse
+        this.date = java.time.Instant.now().toString();
         this.status = "SUCCESS";
     }
     
