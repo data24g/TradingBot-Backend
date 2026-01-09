@@ -1,4 +1,5 @@
 package com.example.TradingBot.tradingbot.schedule;
+
 import com.binance.connector.futures.client.impl.UMFuturesClientImpl;
 import com.example.TradingBot.auth.model.UserAccount;
 import com.example.TradingBot.auth.repository.UserAccountRepository;
@@ -32,12 +33,20 @@ public class MasterScheduler {
 
     private static final Logger logger = LoggerFactory.getLogger(MasterScheduler.class);
     // --- Dependencies ---
-    @Autowired private TradingExecutionService tradingExecutionService;
-    @Autowired private UserAccountRepository userAccountRepository;
-    @Autowired private TradeHistoryRepository tradeHistoryRepository;
-    @Autowired private BinanceApiService binanceApiService;
-    @Autowired private EncryptionService encryptionService;
-    @Autowired private ScheduledOrderService scheduledOrderService;
+    @Autowired
+    private TradingExecutionService tradingExecutionService;
+    @Autowired
+    private UserAccountRepository userAccountRepository;
+    @Autowired
+    private TradeHistoryRepository tradeHistoryRepository;
+    @Autowired
+    private BinanceApiService binanceApiService;
+    @Autowired
+    private EncryptionService encryptionService;
+    @Autowired
+    private ScheduledOrderService scheduledOrderService;
+    @Autowired
+    private com.example.TradingBot.tradingbot.service.DemoPlanService demoPlanService;
 
     // --- Configurations from application.properties ---
     @Value("#{'${bot.system.coins.list}'.split(',')}")
@@ -59,6 +68,13 @@ public class MasterScheduler {
             scheduledOrderService.executeDueOrders();
         } catch (Exception e) {
             logger.error("Error executing scheduled orders: {}", e.getMessage());
+        }
+
+        // Execute demo plans
+        try {
+            demoPlanService.executeDueDemoPlans();
+        } catch (Exception e) {
+            logger.error("Error executing demo plans: {}", e.getMessage());
         }
 
         // Kiểm tra khung giờ giao dịch của toàn hệ thống trước khi làm bất cứ điều gì
@@ -91,7 +107,8 @@ public class MasterScheduler {
             try {
                 UserAccount user = userAccountRepository.findById(trade.getUserId()).orElse(null);
                 if (user == null) {
-                    logger.warn("--- MONITOR: Không tìm thấy user ID {} cho trade ID {}. Bỏ qua.", trade.getUserId(), trade.getId());
+                    logger.warn("--- MONITOR: Không tìm thấy user ID {} cho trade ID {}. Bỏ qua.", trade.getUserId(),
+                            trade.getId());
                     continue;
                 }
 
@@ -99,7 +116,8 @@ public class MasterScheduler {
 
                 // Nếu vị thế trên Binance không còn tồn tại -> nó đã bị đóng
                 if (!binanceApiService.hasOpenPosition(client, trade.getSymbol())) {
-                    logger.warn("--- MONITOR: Vị thế User [{}], Symbol {} đã đóng. Đang cập nhật lịch sử...", user.getUsername(), trade.getSymbol());
+                    logger.warn("--- MONITOR: Vị thế User [{}], Symbol {} đã đóng. Đang cập nhật lịch sử...",
+                            user.getUsername(), trade.getSymbol());
 
                     JSONObject latestTradeInfo = binanceApiService.getLatestTradeForSymbol(client, trade.getSymbol());
                     if (latestTradeInfo != null) {
@@ -107,12 +125,16 @@ public class MasterScheduler {
                         trade.setExitPrice(latestTradeInfo.getDouble("price"));
                         trade.setPnl(latestTradeInfo.getDouble("realizedPnl"));
                         long tradeTime = latestTradeInfo.getLong("time");
-                        trade.setExitTime(LocalDateTime.ofInstant(Instant.ofEpochMilli(tradeTime), ZoneId.systemDefault()));
+                        trade.setExitTime(
+                                LocalDateTime.ofInstant(Instant.ofEpochMilli(tradeTime), ZoneId.systemDefault()));
 
                         tradeHistoryRepository.save(trade);
-                        logger.info("--- MONITOR: Đã cập nhật lịch sử đóng lệnh thành công cho trade ID {}.", trade.getId());
+                        logger.info("--- MONITOR: Đã cập nhật lịch sử đóng lệnh thành công cho trade ID {}.",
+                                trade.getId());
                     } else {
-                        logger.error("--- MONITOR: Không thể lấy thông tin giao dịch cuối cùng để cập nhật lịch sử cho User [{}]", user.getUsername());
+                        logger.error(
+                                "--- MONITOR: Không thể lấy thông tin giao dịch cuối cùng để cập nhật lịch sử cho User [{}]",
+                                user.getUsername());
                     }
                 }
             } catch (Exception e) {

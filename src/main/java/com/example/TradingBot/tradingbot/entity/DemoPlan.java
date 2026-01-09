@@ -17,6 +17,7 @@ public class DemoPlan {
     private String side; // BUY or SELL
     private String recurrence; // NONE, DAILY, WEEKLY, MONTHLY
     private Integer targetHour; // Hour of day to execute
+    private Integer targetMinute; // Minute of hour to execute
     private Integer targetWeekday; // For WEEKLY (0-6, 0=Sunday)
     private Integer targetDate; // For MONTHLY (1-31)
     private LocalDateTime scheduleTime; // First scheduled time
@@ -24,7 +25,8 @@ public class DemoPlan {
     private boolean active = true;
     private LocalDateTime nextRun;
     private LocalDateTime createdAt;
-    
+    private LocalDateTime completedAt; // Time when the plan was completed (for non-recurring plans)
+
     // Demo tracking fields
     private Double totalInvested = 0.0;
     private Double currentValue = 0.0;
@@ -59,6 +61,9 @@ public class DemoPlan {
     public Integer getTargetHour() { return targetHour; }
     public void setTargetHour(Integer targetHour) { this.targetHour = targetHour; }
     
+    public Integer getTargetMinute() { return targetMinute; }
+    public void setTargetMinute(Integer targetMinute) { this.targetMinute = targetMinute; }
+    
     public Integer getTargetWeekday() { return targetWeekday; }
     public void setTargetWeekday(Integer targetWeekday) { this.targetWeekday = targetWeekday; }
     
@@ -88,5 +93,8 @@ public class DemoPlan {
     
     public Double getTotalCoins() { return totalCoins; }
     public void setTotalCoins(Double totalCoins) { this.totalCoins = totalCoins; }
+
+    public LocalDateTime getCompletedAt() { return completedAt; }
+    public void setCompletedAt(LocalDateTime completedAt) { this.completedAt = completedAt; }
 }
 
